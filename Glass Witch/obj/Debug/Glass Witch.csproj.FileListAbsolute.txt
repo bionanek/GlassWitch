@@ -1,0 +1,40 @@
+c:\users\kuba\documents\visual studio 2015\Projects\Glass Witch\Glass Witch\bin\Debug\Glass Witch.exe.config
+c:\users\kuba\documents\visual studio 2015\Projects\Glass Witch\Glass Witch\bin\Debug\Glass Witch.exe
+c:\users\kuba\documents\visual studio 2015\Projects\Glass Witch\Glass Witch\bin\Debug\Glass Witch.pdb
+c:\users\kuba\documents\visual studio 2015\Projects\Glass Witch\Glass Witch\obj\Debug\Glass Witch.csprojResolveAssemblyReference.cache
+c:\users\kuba\documents\visual studio 2015\Projects\Glass Witch\Glass Witch\obj\Debug\Glass_Witch.Start.resources
+c:\users\kuba\documents\visual studio 2015\Projects\Glass Witch\Glass Witch\obj\Debug\Glass_Witch.Properties.Resources.resources
+c:\users\kuba\documents\visual studio 2015\Projects\Glass Witch\Glass Witch\obj\Debug\Glass Witch.csproj.GenerateResource.Cache
+c:\users\kuba\documents\visual studio 2015\Projects\Glass Witch\Glass Witch\obj\Debug\Glass Witch.exe
+c:\users\kuba\documents\visual studio 2015\Projects\Glass Witch\Glass Witch\obj\Debug\Glass Witch.pdb
+c:\users\kuba\documents\visual studio 2015\Projects\Glass Witch\Glass Witch\obj\Debug\Glass_Witch.wybor.resources
+C:\Users\Kuba\Documents\Visual Studio 2015\Projects\Glass Witch\Glass Witch\obj\Debug\Glass_Witch.Zamowienie.resources
+C:\Users\Kuba\Documents\Visual Studio 2015\Projects\Glass Witch\Glass Witch\obj\Debug\Glass_Witch.WprowadzanieNowegoKlienta.resources
+C:\Users\oskar_000\Desktop\Glass Witch\Glass Witch\bin\Debug\Glass Witch.exe.config
+C:\Users\oskar_000\Desktop\Glass Witch\Glass Witch\obj\Debug\Glass Witch.exe
+C:\Users\oskar_000\Desktop\Glass Witch\Glass Witch\obj\Debug\Glass Witch.pdb
+C:\Users\oskar_000\Desktop\Glass Witch\Glass Witch\obj\Debug\Glass Witch.csprojResolveAssemblyReference.cache
+C:\Users\Kuba\Desktop\Glass Witch1\Glass Witch\bin\Debug\Glass Witch.exe.config
+C:\Users\Kuba\Desktop\Glass Witch1\Glass Witch\obj\Debug\Glass Witch.exe
+C:\Users\Kuba\Desktop\Glass Witch1\Glass Witch\obj\Debug\Glass Witch.pdb
+C:\Users\Kuba\Desktop\Glass Witch1\Glass Witch\bin\Debug\Glass Witch.exe
+C:\Users\Kuba\Desktop\Glass Witch1\Glass Witch\bin\Debug\Glass Witch.pdb
+C:\Users\Kuba\Desktop\Glass Witch1\Glass Witch\obj\Debug\Glass Witch.csprojResolveAssemblyReference.cache
+C:\Users\Kuba\Desktop\Glass Witch1\Glass Witch\obj\Debug\Glass_Witch.Start.resources
+C:\Users\Kuba\Desktop\Glass Witch1\Glass Witch\obj\Debug\Glass_Witch.Properties.Resources.resources
+C:\Users\Kuba\Desktop\Glass Witch1\Glass Witch\obj\Debug\Glass_Witch.WprowadzanieNowegoKlienta.resources
+C:\Users\Kuba\Desktop\Glass Witch1\Glass Witch\obj\Debug\Glass_Witch.wybor.resources
+C:\Users\Kuba\Desktop\Glass Witch1\Glass Witch\obj\Debug\Glass_Witch.Zamowienie.resources
+C:\Users\Kuba\Desktop\Glass Witch1\Glass Witch\obj\Debug\Glass Witch.csproj.GenerateResource.Cache
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\bin\Debug\Glass Witch.exe.config
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass Witch.exe
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass Witch.pdb
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\bin\Debug\Glass Witch.exe
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\bin\Debug\Glass Witch.pdb
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csprojResolveAssemblyReference.cache
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Start.resources
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Properties.Resources.resources
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.WprowadzanieNowegoKlienta.resources
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.wybor.resources
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Zamowienie.resources
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csproj.GenerateResource.Cache
