@@ -38,4 +38,4 @@ namespace Glass_Witch
     }
 }
 
-// RUCHANKO W DUPALA
+// RUCHANKO W DUPALA DUPALA DUPALA

@@ -38,3 +38,6 @@ C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.WprowadzanieN
 C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.wybor.resources
 C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Zamowienie.resources
 C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csproj.GenerateResource.Cache
+C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\Glass Witch.exe.config
+C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.exe
+C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.pdb
