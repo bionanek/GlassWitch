@@ -34,6 +34,7 @@ namespace Glass_Witch
         {
             ConnectWithDataBase baza = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
             dataGridView1.DataSource = baza.download_data("Select * from Produkty");
+            
         }
     }
 }
