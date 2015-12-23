@@ -54,7 +54,6 @@
             this.but_staly_klient.TabIndex = 1;
             this.but_staly_klient.Text = "Dla Stałego Klienta";
             this.but_staly_klient.UseVisualStyleBackColor = true;
-            this.but_staly_klient.Click += new System.EventHandler(this.but_staly_klient_Click);
             // 
             // but_powrot
             // 

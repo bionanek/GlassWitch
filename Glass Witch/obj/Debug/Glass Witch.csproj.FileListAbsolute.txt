@@ -38,4 +38,3 @@ C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.WprowadzanieN
 C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.wybor.resources
 C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Zamowienie.resources
 C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csproj.GenerateResource.Cache
-C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.DlaStalegoKlienta.resources

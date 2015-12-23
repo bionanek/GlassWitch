@@ -43,12 +43,5 @@ namespace Glass_Witch
         {
             Application.Exit();
         }
-
-        private void but_staly_klient_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            DlaStalegoKlienta dsk = new DlaStalegoKlienta();
-            dsk.Show();
-        }
     }
 }
