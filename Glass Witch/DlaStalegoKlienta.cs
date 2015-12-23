@@ -39,4 +39,8 @@ namespace Glass_Witch
             wybor.Show();
         }
     }
-}
+} 
+
+
+
+// EFOFJSDJFSVOSNOD NSODN OSDMCO
