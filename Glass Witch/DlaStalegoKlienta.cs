@@ -19,7 +19,6 @@ namespace Glass_Witch
 
         private void DlaStalegoKlienta_Load(object sender, EventArgs e)
         {
-
         }
 
         private void txt_szukajKlienta_TextChanged(object sender, EventArgs e)
@@ -30,6 +29,8 @@ namespace Glass_Witch
         private void but_szukajKlienta_Click(object sender, EventArgs e)
         {
             txt_szukajKlienta.Text = skm.GetData("dupa");
+            dgv1_zamStaliKlienci.DataSource = skm.PobierzDaneKlienta();
+
         }
 
         private void DlaStalegoKlienta_FormClosing(object sender, FormClosingEventArgs e)

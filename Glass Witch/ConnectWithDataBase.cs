@@ -54,15 +54,15 @@ namespace Glass_Witch
             DataTable dt = new DataTable(); // Deklaracja i utworzenie instancji obiektu Datatable
                                             // o nazwie dt
 
-            SqlDataReader dr; // deklaracja obiektu SqlDataReader o nazwie dr
+            SqlDataReader reader; // deklaracja obiektu SqlDataReader o nazwie dr
 
-            SqlCommand sqlc = sqlc = new SqlCommand(query); //Deklaracja obiektu SqlCommand instacji SQLCommand, 
+            SqlCommand command = command = new SqlCommand(query); //Deklaracja obiektu SqlCommand instacji SQLCommand, 
                                                             //która ma wykonac zapytanie
                                                             //podane jako parametr w zmiennej query
 
-            sqlc.Connection = this.connection; // wskazanie polaczenia do bazy danych
-            dr = sqlc.ExecuteReader(); // wykonanie zapytania i utworzenie wskaźnika dr
-            dt.Load(dr); //zaladowanie danych do obiektu DataTable
+            command.Connection = this.connection; // wskazanie polaczenia do bazy danych
+            reader = command.ExecuteReader(); // wykonanie zapytania i utworzenie wskaźnika dr
+            dt.Load(reader); //zaladowanie danych do obiektu DataTable
 
             return dt;
         }
