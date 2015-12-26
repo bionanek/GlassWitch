@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_szukajKlienta = new System.Windows.Forms.TextBox();
             this.lab_staliKlienci = new System.Windows.Forms.Label();
             this.but_szukajKlienta = new System.Windows.Forms.Button();
             this.dgv1_zamStaliKlienci = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1_zamStaliKlienci)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,17 +65,37 @@
             // 
             // dgv1_zamStaliKlienci
             // 
+            this.dgv1_zamStaliKlienci.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.NullValue = "brak";
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv1_zamStaliKlienci.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv1_zamStaliKlienci.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgv1_zamStaliKlienci.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgv1_zamStaliKlienci.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgv1_zamStaliKlienci.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv1_zamStaliKlienci.Location = new System.Drawing.Point(12, 99);
             this.dgv1_zamStaliKlienci.Name = "dgv1_zamStaliKlienci";
+            this.dgv1_zamStaliKlienci.ReadOnly = true;
+            this.dgv1_zamStaliKlienci.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv1_zamStaliKlienci.Size = new System.Drawing.Size(260, 150);
             this.dgv1_zamStaliKlienci.TabIndex = 3;
+            this.dgv1_zamStaliKlienci.SelectionChanged += new System.EventHandler(this.dgv1_zamStaliKlienci_SelectionChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(39, 283);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(192, 20);
+            this.textBox1.TabIndex = 4;
             // 
             // DlaStalegoKlienta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(353, 359);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dgv1_zamStaliKlienci);
             this.Controls.Add(this.but_szukajKlienta);
             this.Controls.Add(this.lab_staliKlienci);
@@ -94,5 +116,6 @@
         private System.Windows.Forms.Label lab_staliKlienci;
         private System.Windows.Forms.Button but_szukajKlienta;
         private System.Windows.Forms.DataGridView dgv1_zamStaliKlienci;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

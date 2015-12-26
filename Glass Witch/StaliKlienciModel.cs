@@ -27,9 +27,8 @@ namespace Glass_Witch
         public DataTable PobierzDaneKlienta()
         {
             DataTable nazwa = cwd.download_data("SELECT Nazwa from Klienci");
+            
             return nazwa;
         }
-
-
     }
 }

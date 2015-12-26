@@ -61,10 +61,24 @@ namespace Glass_Witch
                                                             //podane jako parametr w zmiennej query
 
             command.Connection = this.connection; // wskazanie polaczenia do bazy danych
+            
             reader = command.ExecuteReader(); // wykonanie zapytania i utworzenie wskaźnika dr
             dt.Load(reader); //zaladowanie danych do obiektu DataTable
 
             return dt;
+        }
+
+        // TEST
+
+        public string PobierzKlienta()
+        {
+
+            SqlDataReader reader;
+            SqlCommand command = new SqlCommand("Select Nazwa, Kraj from Klienci");
+            command.Connection = this.connection;
+            reader = command.ExecuteReader();
+                string klient = reader.ToString();
+            return klient;
         }
     }
 }
