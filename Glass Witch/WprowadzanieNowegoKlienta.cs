@@ -40,5 +40,70 @@ namespace Glass_Witch
             SkładanieZamówienia DoZamowienia = new SkładanieZamówienia();
             DoZamowienia.Show();
         }
+
+
+
+        //TEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃ
+
+        private void textBox_NazwaFirmy_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_KrajZamowienia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_MiastoZamowienia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_KodPocztowy_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_Ulica_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_Email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_Telefon_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        //TEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃ
+
+
+
+
+        //TEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃ
+        private void textBox_KrajDostarczenia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_MiastoDostarczenia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_KodPocztowyDostarczenia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_UlicaDostarczenia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        //TEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃ
     }
 }

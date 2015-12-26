@@ -60,6 +60,7 @@
             this.textBox_NazwaFirmy.Name = "textBox_NazwaFirmy";
             this.textBox_NazwaFirmy.Size = new System.Drawing.Size(167, 20);
             this.textBox_NazwaFirmy.TabIndex = 0;
+            this.textBox_NazwaFirmy.TextChanged += new System.EventHandler(this.textBox_NazwaFirmy_TextChanged);
             // 
             // textBox_KrajZamowienia
             // 
@@ -67,6 +68,7 @@
             this.textBox_KrajZamowienia.Name = "textBox_KrajZamowienia";
             this.textBox_KrajZamowienia.Size = new System.Drawing.Size(167, 20);
             this.textBox_KrajZamowienia.TabIndex = 1;
+            this.textBox_KrajZamowienia.TextChanged += new System.EventHandler(this.textBox_KrajZamowienia_TextChanged);
             // 
             // textBox_MiastoZamowienia
             // 
@@ -74,6 +76,7 @@
             this.textBox_MiastoZamowienia.Name = "textBox_MiastoZamowienia";
             this.textBox_MiastoZamowienia.Size = new System.Drawing.Size(167, 20);
             this.textBox_MiastoZamowienia.TabIndex = 2;
+            this.textBox_MiastoZamowienia.TextChanged += new System.EventHandler(this.textBox_MiastoZamowienia_TextChanged);
             // 
             // textBox_KodPocztowy
             // 
@@ -81,6 +84,7 @@
             this.textBox_KodPocztowy.Name = "textBox_KodPocztowy";
             this.textBox_KodPocztowy.Size = new System.Drawing.Size(167, 20);
             this.textBox_KodPocztowy.TabIndex = 3;
+            this.textBox_KodPocztowy.TextChanged += new System.EventHandler(this.textBox_KodPocztowy_TextChanged);
             // 
             // textBox_Ulica
             // 
@@ -88,6 +92,7 @@
             this.textBox_Ulica.Name = "textBox_Ulica";
             this.textBox_Ulica.Size = new System.Drawing.Size(167, 20);
             this.textBox_Ulica.TabIndex = 4;
+            this.textBox_Ulica.TextChanged += new System.EventHandler(this.textBox_Ulica_TextChanged);
             // 
             // textBox_Email
             // 
@@ -95,6 +100,7 @@
             this.textBox_Email.Name = "textBox_Email";
             this.textBox_Email.Size = new System.Drawing.Size(132, 20);
             this.textBox_Email.TabIndex = 5;
+            this.textBox_Email.TextChanged += new System.EventHandler(this.textBox_Email_TextChanged);
             // 
             // textBox_Telefon
             // 
@@ -102,6 +108,7 @@
             this.textBox_Telefon.Name = "textBox_Telefon";
             this.textBox_Telefon.Size = new System.Drawing.Size(132, 20);
             this.textBox_Telefon.TabIndex = 6;
+            this.textBox_Telefon.TextChanged += new System.EventHandler(this.textBox_Telefon_TextChanged);
             // 
             // label1
             // 
@@ -204,6 +211,7 @@
             this.textBox_MiastoDostarczenia.Name = "textBox_MiastoDostarczenia";
             this.textBox_MiastoDostarczenia.Size = new System.Drawing.Size(167, 20);
             this.textBox_MiastoDostarczenia.TabIndex = 16;
+            this.textBox_MiastoDostarczenia.TextChanged += new System.EventHandler(this.textBox_MiastoDostarczenia_TextChanged);
             // 
             // textBox_UlicaDostarczenia
             // 
@@ -211,6 +219,7 @@
             this.textBox_UlicaDostarczenia.Name = "textBox_UlicaDostarczenia";
             this.textBox_UlicaDostarczenia.Size = new System.Drawing.Size(167, 20);
             this.textBox_UlicaDostarczenia.TabIndex = 17;
+            this.textBox_UlicaDostarczenia.TextChanged += new System.EventHandler(this.textBox_UlicaDostarczenia_TextChanged);
             // 
             // textBox_KodPocztowyDostarczenia
             // 
@@ -218,6 +227,7 @@
             this.textBox_KodPocztowyDostarczenia.Name = "textBox_KodPocztowyDostarczenia";
             this.textBox_KodPocztowyDostarczenia.Size = new System.Drawing.Size(167, 20);
             this.textBox_KodPocztowyDostarczenia.TabIndex = 18;
+            this.textBox_KodPocztowyDostarczenia.TextChanged += new System.EventHandler(this.textBox_KodPocztowyDostarczenia_TextChanged);
             // 
             // textBox_KrajDostarczenia
             // 
@@ -225,6 +235,7 @@
             this.textBox_KrajDostarczenia.Name = "textBox_KrajDostarczenia";
             this.textBox_KrajDostarczenia.Size = new System.Drawing.Size(167, 20);
             this.textBox_KrajDostarczenia.TabIndex = 19;
+            this.textBox_KrajDostarczenia.TextChanged += new System.EventHandler(this.textBox_KrajDostarczenia_TextChanged);
             // 
             // label9
             // 
@@ -270,7 +281,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 421);
+            this.ClientSize = new System.Drawing.Size(644, 596);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
