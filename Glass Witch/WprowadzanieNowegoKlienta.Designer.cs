@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox_NazwaFirmy = new System.Windows.Forms.TextBox();
+            this.textBox_KrajZamowienia = new System.Windows.Forms.TextBox();
+            this.textBox_MiastoZamowienia = new System.Windows.Forms.TextBox();
+            this.textBox_KodPocztowy = new System.Windows.Forms.TextBox();
+            this.textBox_Ulica = new System.Windows.Forms.TextBox();
+            this.textBox_Email = new System.Windows.Forms.TextBox();
+            this.textBox_Telefon = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,56 +43,65 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.adres_faktury = new System.Windows.Forms.CheckBox();
+            this.button_DoZamowienia = new System.Windows.Forms.Button();
+            this.textBox_MiastoDostarczenia = new System.Windows.Forms.TextBox();
+            this.textBox_UlicaDostarczenia = new System.Windows.Forms.TextBox();
+            this.textBox_KodPocztowyDostarczenia = new System.Windows.Forms.TextBox();
+            this.textBox_KrajDostarczenia = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBox_NazwaFirmy
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBox_NazwaFirmy.Location = new System.Drawing.Point(23, 70);
+            this.textBox_NazwaFirmy.Name = "textBox_NazwaFirmy";
+            this.textBox_NazwaFirmy.Size = new System.Drawing.Size(167, 20);
+            this.textBox_NazwaFirmy.TabIndex = 0;
             // 
-            // textBox2
+            // textBox_KrajZamowienia
             // 
-            this.textBox2.Location = new System.Drawing.Point(23, 111);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBox_KrajZamowienia.Location = new System.Drawing.Point(23, 111);
+            this.textBox_KrajZamowienia.Name = "textBox_KrajZamowienia";
+            this.textBox_KrajZamowienia.Size = new System.Drawing.Size(167, 20);
+            this.textBox_KrajZamowienia.TabIndex = 1;
             // 
-            // textBox3
+            // textBox_MiastoZamowienia
             // 
-            this.textBox3.Location = new System.Drawing.Point(23, 154);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 20);
-            this.textBox3.TabIndex = 2;
+            this.textBox_MiastoZamowienia.Location = new System.Drawing.Point(23, 158);
+            this.textBox_MiastoZamowienia.Name = "textBox_MiastoZamowienia";
+            this.textBox_MiastoZamowienia.Size = new System.Drawing.Size(167, 20);
+            this.textBox_MiastoZamowienia.TabIndex = 2;
             // 
-            // textBox4
+            // textBox_KodPocztowy
             // 
-            this.textBox4.Location = new System.Drawing.Point(23, 201);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 20);
-            this.textBox4.TabIndex = 3;
+            this.textBox_KodPocztowy.Location = new System.Drawing.Point(23, 205);
+            this.textBox_KodPocztowy.Name = "textBox_KodPocztowy";
+            this.textBox_KodPocztowy.Size = new System.Drawing.Size(167, 20);
+            this.textBox_KodPocztowy.TabIndex = 3;
             // 
-            // textBox5
+            // textBox_Ulica
             // 
-            this.textBox5.Location = new System.Drawing.Point(23, 252);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 20);
-            this.textBox5.TabIndex = 4;
+            this.textBox_Ulica.Location = new System.Drawing.Point(23, 252);
+            this.textBox_Ulica.Name = "textBox_Ulica";
+            this.textBox_Ulica.Size = new System.Drawing.Size(167, 20);
+            this.textBox_Ulica.TabIndex = 4;
             // 
-            // textBox6
+            // textBox_Email
             // 
-            this.textBox6.Location = new System.Drawing.Point(406, 70);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(132, 20);
-            this.textBox6.TabIndex = 5;
+            this.textBox_Email.Location = new System.Drawing.Point(406, 70);
+            this.textBox_Email.Name = "textBox_Email";
+            this.textBox_Email.Size = new System.Drawing.Size(132, 20);
+            this.textBox_Email.TabIndex = 5;
             // 
-            // textBox7
+            // textBox_Telefon
             // 
-            this.textBox7.Location = new System.Drawing.Point(406, 111);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(132, 20);
-            this.textBox7.TabIndex = 6;
+            this.textBox_Telefon.Location = new System.Drawing.Point(406, 111);
+            this.textBox_Telefon.Name = "textBox_Telefon";
+            this.textBox_Telefon.Size = new System.Drawing.Size(132, 20);
+            this.textBox_Telefon.TabIndex = 6;
             // 
             // label1
             // 
@@ -118,7 +127,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(220, 158);
+            this.label3.Location = new System.Drawing.Point(220, 162);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 16);
             this.label3.TabIndex = 9;
@@ -128,7 +137,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(220, 205);
+            this.label4.Location = new System.Drawing.Point(220, 209);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 16);
             this.label4.TabIndex = 10;
@@ -167,20 +176,109 @@
             // adres_faktury
             // 
             this.adres_faktury.AutoSize = true;
+            this.adres_faktury.Checked = true;
+            this.adres_faktury.CheckState = System.Windows.Forms.CheckState.Checked;
             this.adres_faktury.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.adres_faktury.Location = new System.Drawing.Point(167, 316);
+            this.adres_faktury.Location = new System.Drawing.Point(23, 342);
             this.adres_faktury.Name = "adres_faktury";
-            this.adres_faktury.Size = new System.Drawing.Size(395, 20);
+            this.adres_faktury.Size = new System.Drawing.Size(328, 20);
             this.adres_faktury.TabIndex = 14;
-            this.adres_faktury.Text = "Czy adres faktury i dostarczenia przesyłki się różnią?";
+            this.adres_faktury.Text = "Adres faktury i dostarczenia są takie same?";
             this.adres_faktury.UseVisualStyleBackColor = true;
             this.adres_faktury.CheckedChanged += new System.EventHandler(this.adres_faktury_CheckedChanged);
+            // 
+            // button_DoZamowienia
+            // 
+            this.button_DoZamowienia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_DoZamowienia.Location = new System.Drawing.Point(406, 342);
+            this.button_DoZamowienia.Name = "button_DoZamowienia";
+            this.button_DoZamowienia.Size = new System.Drawing.Size(226, 66);
+            this.button_DoZamowienia.TabIndex = 15;
+            this.button_DoZamowienia.Text = "PRZEJDŹ DO ZAMÓWIENIA";
+            this.button_DoZamowienia.UseVisualStyleBackColor = true;
+            // 
+            // textBox_MiastoDostarczenia
+            // 
+            this.textBox_MiastoDostarczenia.Location = new System.Drawing.Point(23, 478);
+            this.textBox_MiastoDostarczenia.Name = "textBox_MiastoDostarczenia";
+            this.textBox_MiastoDostarczenia.Size = new System.Drawing.Size(167, 20);
+            this.textBox_MiastoDostarczenia.TabIndex = 16;
+            // 
+            // textBox_UlicaDostarczenia
+            // 
+            this.textBox_UlicaDostarczenia.Location = new System.Drawing.Point(23, 560);
+            this.textBox_UlicaDostarczenia.Name = "textBox_UlicaDostarczenia";
+            this.textBox_UlicaDostarczenia.Size = new System.Drawing.Size(167, 20);
+            this.textBox_UlicaDostarczenia.TabIndex = 17;
+            // 
+            // textBox_KodPocztowyDostarczenia
+            // 
+            this.textBox_KodPocztowyDostarczenia.Location = new System.Drawing.Point(23, 518);
+            this.textBox_KodPocztowyDostarczenia.Name = "textBox_KodPocztowyDostarczenia";
+            this.textBox_KodPocztowyDostarczenia.Size = new System.Drawing.Size(167, 20);
+            this.textBox_KodPocztowyDostarczenia.TabIndex = 18;
+            // 
+            // textBox_KrajDostarczenia
+            // 
+            this.textBox_KrajDostarczenia.Location = new System.Drawing.Point(23, 435);
+            this.textBox_KrajDostarczenia.Name = "textBox_KrajDostarczenia";
+            this.textBox_KrajDostarczenia.Size = new System.Drawing.Size(167, 20);
+            this.textBox_KrajDostarczenia.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(220, 442);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(130, 16);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Kraj Dostarczenia";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(220, 485);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(149, 16);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Miasto Dostarczenia";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(220, 525);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(104, 16);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Kod Pocztowy";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(220, 567);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(44, 16);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "Ulica";
             // 
             // WprowadzanieNowegoKlienta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 386);
+            this.ClientSize = new System.Drawing.Size(644, 421);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox_KrajDostarczenia);
+            this.Controls.Add(this.textBox_KodPocztowyDostarczenia);
+            this.Controls.Add(this.textBox_UlicaDostarczenia);
+            this.Controls.Add(this.textBox_MiastoDostarczenia);
+            this.Controls.Add(this.button_DoZamowienia);
             this.Controls.Add(this.adres_faktury);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -189,13 +287,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_Telefon);
+            this.Controls.Add(this.textBox_Email);
+            this.Controls.Add(this.textBox_Ulica);
+            this.Controls.Add(this.textBox_KodPocztowy);
+            this.Controls.Add(this.textBox_MiastoZamowienia);
+            this.Controls.Add(this.textBox_KrajZamowienia);
+            this.Controls.Add(this.textBox_NazwaFirmy);
             this.Name = "WprowadzanieNowegoKlienta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WprowadzanieNowegoKlienta";
@@ -207,13 +305,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox_NazwaFirmy;
+        private System.Windows.Forms.TextBox textBox_KrajZamowienia;
+        private System.Windows.Forms.TextBox textBox_MiastoZamowienia;
+        private System.Windows.Forms.TextBox textBox_KodPocztowy;
+        private System.Windows.Forms.TextBox textBox_Ulica;
+        private System.Windows.Forms.TextBox textBox_Email;
+        private System.Windows.Forms.TextBox textBox_Telefon;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -222,5 +320,14 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox adres_faktury;
+        private System.Windows.Forms.Button button_DoZamowienia;
+        private System.Windows.Forms.TextBox textBox_MiastoDostarczenia;
+        private System.Windows.Forms.TextBox textBox_UlicaDostarczenia;
+        private System.Windows.Forms.TextBox textBox_KodPocztowyDostarczenia;
+        private System.Windows.Forms.TextBox textBox_KrajDostarczenia;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

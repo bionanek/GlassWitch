@@ -28,11 +28,11 @@ namespace Glass_Witch
         {
             if(adres_faktury.Checked)
             {
-
+                this.Size = new Size(660, 460);
             }
             else
             {
-
+                this.Size = new Size(660, 645);
             }
         }
     }
