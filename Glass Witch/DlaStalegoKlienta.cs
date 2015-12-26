@@ -6,15 +6,23 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
+
 
 namespace Glass_Witch
 {
     public partial class DlaStalegoKlienta : Form
     {
+        SqlConnection connection = new SqlConnection();
+        System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+
+        int klik = 0;
         int wybranyWiersz = 0;
         string nazwa;
         string kraj;
-
+        string daneKlienta;
 
         StaliKlienciModel skm = new StaliKlienciModel();
         ConnectWithDataBase cwd = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
@@ -22,23 +30,32 @@ namespace Glass_Witch
         {
             InitializeComponent();
         }
+     
 
         private void DlaStalegoKlienta_Load(object sender, EventArgs e)
         {
+            dgv1_zamStaliKlienci.DataSource = cwd.download_data("select Nazwa, Kraj from Klienci");
+            dgv1_zamStaliKlienci.Rows[0].Selected = false;
+
+            string test = "hello";
+
+            ToolTip1.SetToolTip(this.but_szukajKlienta, DownloadCustomerDataToString());
+
+
             int szerokosc = 0;
             int wysokosc = 0;
 
-            dgv1_zamStaliKlienci.DataSource = cwd.download_data("select Nazwa, Kraj from Klienci");
+            
 
-           /* foreach (DataGridViewColumn col in dgv1_zamStaliKlienci.Columns)
+        }
+        public string DownloadCustomerDataToString()
+        {
+
+            for (int i = 1; i <= 10; i++)
             {
-                szerokosc += col.Width;
-                
-
+                daneKlienta += cwd.download_data("Select * from Klienci where Nazwa = '" + nazwa + "'").Rows[0][i].ToString() + " ";
             }
-            dgv1_zamStaliKlienci.Width = szerokosc + dgv1_zamStaliKlienci.RowHeadersWidth + 2;*/
-            dgv1_zamStaliKlienci.Rows[0].Selected = false;
-
+            return daneKlienta;
         }
 
         private void txt_szukajKlienta_TextChanged(object sender, EventArgs e)
@@ -48,10 +65,8 @@ namespace Glass_Witch
 
         private void but_szukajKlienta_Click(object sender, EventArgs e)
         {
-            nazwa = dgv1_zamStaliKlienci.SelectedCells[0].Value.ToString();
-            kraj = dgv1_zamStaliKlienci.SelectedCells[1].Value.ToString();
-            textBox1.Text = nazwa + " z  kraju " + kraj;   
-        } 
+            txt_szukajKlienta.Text = nazwa;
+        }
 
         private void DlaStalegoKlienta_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -64,11 +79,18 @@ namespace Glass_Witch
 
         private void dgv1_zamStaliKlienci_SelectionChanged(object sender, EventArgs e)
         {
+            daneKlienta = "";
             wybranyWiersz = dgv1_zamStaliKlienci.CurrentCell.RowIndex;
+            nazwa = dgv1_zamStaliKlienci.Rows[wybranyWiersz].Cells[0].Value.ToString();
+            if (klik > 3)
+            {
+                ToolTip1.SetToolTip(this.but_szukajKlienta, DownloadCustomerDataToString());
+            }
+
+            klik++;
         }
     }
 } 
 
 
 
-// DupaoooO

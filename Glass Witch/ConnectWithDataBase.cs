@@ -70,15 +70,10 @@ namespace Glass_Witch
 
         // TEST
 
-        public string PobierzKlienta()
+        public void PolaczZBaza()
         {
 
-            SqlDataReader reader;
-            SqlCommand command = new SqlCommand("Select Nazwa, Kraj from Klienci");
-            command.Connection = this.connection;
-            reader = command.ExecuteReader();
-                string klient = reader.ToString();
-            return klient;
+            
         }
     }
 }

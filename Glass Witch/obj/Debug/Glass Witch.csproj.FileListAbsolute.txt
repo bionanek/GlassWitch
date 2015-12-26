@@ -10,3 +10,4 @@ C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Zamowienie.re
 C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csproj.GenerateResource.Cache
 C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass Witch.exe
 C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass Witch.pdb
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csprojResolveAssemblyReference.cache
