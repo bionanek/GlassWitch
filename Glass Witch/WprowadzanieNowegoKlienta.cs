@@ -17,11 +17,9 @@ namespace Glass_Witch
         }
 
         private void WprowadzanieNowegoKlienta_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            
+        {          
             wybor wybor = new wybor();
-            wybor.Show();
-            
+            wybor.Show();           
         }
 
         private void adres_faktury_CheckedChanged(object sender, EventArgs e)
@@ -35,7 +33,12 @@ namespace Glass_Witch
                 this.Size = new Size(660, 645);
             }
         }
+
+        private void button_DoZamowienia_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SkładanieZamówienia DoZamowienia = new SkładanieZamówienia();
+            DoZamowienia.Show();
+        }
     }
 }
-
-

@@ -19,7 +19,6 @@ namespace Glass_Witch
 
         private void wybor_Load(object sender, EventArgs e)
         {
-
             Start start = new Start();
             start.Close();
         }

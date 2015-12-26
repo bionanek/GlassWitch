@@ -73,6 +73,12 @@
     <Compile Include="DlaStalegoKlienta.Designer.cs">
       <DependentUpon>DlaStalegoKlienta.cs</DependentUpon>
     </Compile>
+    <Compile Include="SkładanieZamówienia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkładanieZamówienia.Designer.cs">
+      <DependentUpon>SkładanieZamówienia.cs</DependentUpon>
+    </Compile>
     <Compile Include="StaliKlienciModel.cs" />
     <Compile Include="Start.cs">
       <SubType>Form</SubType>

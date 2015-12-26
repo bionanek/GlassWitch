@@ -196,6 +196,7 @@
             this.button_DoZamowienia.TabIndex = 15;
             this.button_DoZamowienia.Text = "PRZEJDŹ DO ZAMÓWIENIA";
             this.button_DoZamowienia.UseVisualStyleBackColor = true;
+            this.button_DoZamowienia.Click += new System.EventHandler(this.button_DoZamowienia_Click);
             // 
             // textBox_MiastoDostarczenia
             // 
