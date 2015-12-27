@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_szukajKlienta = new System.Windows.Forms.TextBox();
             this.lab_staliKlienci = new System.Windows.Forms.Label();
             this.but_szukajKlienta = new System.Windows.Forms.Button();
@@ -59,7 +59,7 @@
             // 
             // but_szukajKlienta
             // 
-            this.but_szukajKlienta.Location = new System.Drawing.Point(115, 65);
+            this.but_szukajKlienta.Location = new System.Drawing.Point(119, 65);
             this.but_szukajKlienta.Name = "but_szukajKlienta";
             this.but_szukajKlienta.Size = new System.Drawing.Size(96, 35);
             this.but_szukajKlienta.TabIndex = 2;
@@ -70,10 +70,10 @@
             // dgv1_zamStaliKlienci
             // 
             this.dgv1_zamStaliKlienci.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.NullValue = "brak";
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv1_zamStaliKlienci.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.NullValue = "brak";
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv1_zamStaliKlienci.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv1_zamStaliKlienci.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv1_zamStaliKlienci.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv1_zamStaliKlienci.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;

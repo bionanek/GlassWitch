@@ -51,7 +51,7 @@ namespace Glass_Witch
         public string DownloadCustomerDataToString()
         {
 
-            for (int i = 1; i <= 10; i++)
+            for (int i = 2; i <= 10; i++)
             {
                 daneKlienta += cwd.download_data("Select * from Klienci where Nazwa = '" + nazwa + "'").Rows[0][i].ToString() + " ";
             }
@@ -68,6 +68,36 @@ namespace Glass_Witch
             txt_szukajKlienta.Text = nazwa;
         }
 
+        private void dgv1_zamStaliKlienci_SelectionChanged(object sender, EventArgs e)
+        {
+            daneKlienta = "";
+            wybranyWiersz = dgv1_zamStaliKlienci.CurrentCell.RowIndex;
+            nazwa = dgv1_zamStaliKlienci.Rows[wybranyWiersz].Cells[0].Value.ToString();
+        }
+            /*if (klik > 3)
+            {
+                //ToolTip1.SetToolTip(this.but_szukajKlienta, DownloadCustomerDataToString());
+                ToolTip1.Show(DownloadCustomerDataToString(), this.but_szukajKlienta, 999999);
+                ToolTip1.OwnerDraw = true;
+                ToolTip1.Draw += new DrawToolTipEventHandler(ToolTip1_Draw);
+                ToolTip1.Popup += new PopupEventHandler(ToolTip1_Popup);
+            }
+
+            klik++;
+        }
+        void ToolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+            // on popip set the size of tool tip
+            e.ToolTipSize = TextRenderer.MeasureText(DownloadCustomerDataToString(), new Font("Arial", 16.0f));
+        }
+        void ToolTip1_Draw(object sender, DrawToolTipEventArgs e)
+        {
+            Font f = new Font("Arial", 16.0f);
+            e.DrawBackground();
+            e.DrawBorder();
+            e.Graphics.DrawString(e.ToolTipText, f, Brushes.Black, new PointF(2, 2));
+        }*/
         private void DlaStalegoKlienta_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
@@ -75,22 +105,9 @@ namespace Glass_Witch
             wybor.Show();
         }
 
-
-
-        private void dgv1_zamStaliKlienci_SelectionChanged(object sender, EventArgs e)
-        {
-            daneKlienta = "";
-            wybranyWiersz = dgv1_zamStaliKlienci.CurrentCell.RowIndex;
-            nazwa = dgv1_zamStaliKlienci.Rows[wybranyWiersz].Cells[0].Value.ToString();
-            if (klik > 3)
-            {
-                ToolTip1.SetToolTip(this.but_szukajKlienta, DownloadCustomerDataToString());
-            }
-
-            klik++;
-        }
     }
-} 
+}
+
 
 
 
