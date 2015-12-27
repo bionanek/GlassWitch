@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_szukajKlienta = new System.Windows.Forms.TextBox();
             this.lab_staliKlienci = new System.Windows.Forms.Label();
             this.but_szukajKlienta = new System.Windows.Forms.Button();
@@ -74,29 +76,47 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.dgv1_zamStaliKlienci.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv1_zamStaliKlienci.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgv1_zamStaliKlienci.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgv1_zamStaliKlienci.BackgroundColor = System.Drawing.Color.Silver;
+            this.dgv1_zamStaliKlienci.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv1_zamStaliKlienci.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv1_zamStaliKlienci.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv1_zamStaliKlienci.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv1_zamStaliKlienci.Location = new System.Drawing.Point(32, 161);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv1_zamStaliKlienci.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv1_zamStaliKlienci.Location = new System.Drawing.Point(44, 106);
             this.dgv1_zamStaliKlienci.Name = "dgv1_zamStaliKlienci";
             this.dgv1_zamStaliKlienci.ReadOnly = true;
             this.dgv1_zamStaliKlienci.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv1_zamStaliKlienci.Size = new System.Drawing.Size(260, 150);
+            this.dgv1_zamStaliKlienci.Size = new System.Drawing.Size(260, 241);
             this.dgv1_zamStaliKlienci.TabIndex = 3;
             this.dgv1_zamStaliKlienci.SelectionChanged += new System.EventHandler(this.dgv1_zamStaliKlienci_SelectionChanged);
             // 
             // DlaStalegoKlienta
             // 
+            this.AcceptButton = this.but_szukajKlienta;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(353, 359);
+            this.ClientSize = new System.Drawing.Size(342, 359);
             this.Controls.Add(this.dgv1_zamStaliKlienci);
             this.Controls.Add(this.but_szukajKlienta);
             this.Controls.Add(this.lab_staliKlienci);
             this.Controls.Add(this.txt_szukajKlienta);
             this.Name = "DlaStalegoKlienta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DlaStalegoKlienta";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DlaStalegoKlienta_FormClosing);
             this.Load += new System.EventHandler(this.DlaStalegoKlienta_Load);

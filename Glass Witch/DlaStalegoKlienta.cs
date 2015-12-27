@@ -23,6 +23,7 @@ namespace Glass_Witch
         string nazwa;
         string kraj;
         string daneKlienta;
+        DataTable wszyscyKlienci;
 
         StaliKlienciModel skm = new StaliKlienciModel();
         ConnectWithDataBase cwd = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
@@ -34,19 +35,11 @@ namespace Glass_Witch
 
         private void DlaStalegoKlienta_Load(object sender, EventArgs e)
         {
-            dgv1_zamStaliKlienci.DataSource = cwd.download_data("select Nazwa, Kraj from Klienci");
+            wszyscyKlienci = cwd.download_data("select Nazwa, Kraj from Klienci");
+            dgv1_zamStaliKlienci.DataSource = wszyscyKlienci;
             dgv1_zamStaliKlienci.Rows[0].Selected = false;
 
-            string test = "hello";
-
             ToolTip1.SetToolTip(this.but_szukajKlienta, DownloadCustomerDataToString());
-
-
-            int szerokosc = 0;
-            int wysokosc = 0;
-
-            
-
         }
         public string DownloadCustomerDataToString()
         {
@@ -61,11 +54,48 @@ namespace Glass_Witch
         private void txt_szukajKlienta_TextChanged(object sender, EventArgs e)
         {
             txt_szukajKlienta.Text = txt_szukajKlienta.Text.ToLower();
+
+
         }
 
         private void but_szukajKlienta_Click(object sender, EventArgs e)
         {
-            txt_szukajKlienta.Text = nazwa;
+            string zawartoscKomorki = "";
+            bool znalezione = false;
+            bool pierwszePrzejscie = false;
+            DataTable zawartoscWiersza = wszyscyKlienci.Clone();
+            if (string.IsNullOrWhiteSpace(txt_szukajKlienta.Text))
+            {
+                dgv1_zamStaliKlienci.DataSource = wszyscyKlienci;
+            }
+            else
+            {
+                for (int i = 0; i < wszyscyKlienci.Rows.Count; i++)
+                {
+                    znalezione = false;
+                    for (int j = 0; j < wszyscyKlienci.Columns.Count; j++)
+                    {
+                        zawartoscKomorki = wszyscyKlienci.Rows[i][j].ToString().ToLower();
+                        if (zawartoscKomorki.IndexOf(txt_szukajKlienta.Text) >= 0)
+                        {
+                            znalezione = true;
+                        }
+                        else { }
+                        if (znalezione == true)
+                        {
+                            if(pierwszePrzejscie == false)
+                            {
+                                pierwszePrzejscie = true;
+                                dgv1_zamStaliKlienci.DataSource = null;
+                            }
+                            zawartoscWiersza.ImportRow(wszyscyKlienci.Rows[i]);
+                            znalezione = false;
+                            dgv1_zamStaliKlienci.DataSource = zawartoscWiersza;
+
+                        }
+                    }
+                }
+            }
         }
 
         private void dgv1_zamStaliKlienci_SelectionChanged(object sender, EventArgs e)
