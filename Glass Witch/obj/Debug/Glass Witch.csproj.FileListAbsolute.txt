@@ -26,3 +26,4 @@ C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch
 C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csproj.GenerateResource.Cache
 C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.exe
 C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.pdb
+C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.SkładanieZamówienia.resources

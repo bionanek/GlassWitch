@@ -109,6 +109,9 @@
     <EmbeddedResource Include="DlaStalegoKlienta.resx">
       <DependentUpon>DlaStalegoKlienta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SkładanieZamówienia.resx">
+      <DependentUpon>SkładanieZamówienia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
     </EmbeddedResource>

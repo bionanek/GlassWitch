@@ -15,5 +15,17 @@ namespace Glass_Witch
         {
             InitializeComponent();
         }
+
+        private void SkładanieZamówienia_Load(object sender, EventArgs e)
+        {
+            Start start = new Start();
+            start.Close();
+        }
+
+        private void SkładanieZamówienia_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            WprowadzanieNowegoKlienta wnk = new WprowadzanieNowegoKlienta();
+            wnk.Show();
+        }
     }
 }
