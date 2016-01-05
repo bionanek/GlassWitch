@@ -110,16 +110,18 @@
             this.txt_Email.Location = new System.Drawing.Point(406, 162);
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(132, 20);
-            this.txt_Email.TabIndex = 5;
+            this.txt_Email.TabIndex = 7;
             this.txt_Email.TextChanged += new System.EventHandler(this.txt_Email_TextChanged);
             // 
             // txt_Telefon
             // 
             this.txt_Telefon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_Telefon.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_Telefon.Location = new System.Drawing.Point(406, 209);
             this.txt_Telefon.Name = "txt_Telefon";
             this.txt_Telefon.Size = new System.Drawing.Size(132, 20);
-            this.txt_Telefon.TabIndex = 6;
+            this.txt_Telefon.TabIndex = 8;
+            this.txt_Telefon.Text = "OPCJONALNE";
             this.txt_Telefon.TextChanged += new System.EventHandler(this.txt_Telefon_TextChanged);
             // 
             // label1
@@ -224,7 +226,7 @@
             this.txt_MiastoDostarczenia.Location = new System.Drawing.Point(23, 478);
             this.txt_MiastoDostarczenia.Name = "txt_MiastoDostarczenia";
             this.txt_MiastoDostarczenia.Size = new System.Drawing.Size(167, 20);
-            this.txt_MiastoDostarczenia.TabIndex = 16;
+            this.txt_MiastoDostarczenia.TabIndex = 11;
             // 
             // txt_UlicaDostarczenia
             // 
@@ -232,7 +234,7 @@
             this.txt_UlicaDostarczenia.Location = new System.Drawing.Point(23, 560);
             this.txt_UlicaDostarczenia.Name = "txt_UlicaDostarczenia";
             this.txt_UlicaDostarczenia.Size = new System.Drawing.Size(167, 20);
-            this.txt_UlicaDostarczenia.TabIndex = 17;
+            this.txt_UlicaDostarczenia.TabIndex = 13;
             // 
             // txt_KodPocztowyDostarczenia
             // 
@@ -240,7 +242,7 @@
             this.txt_KodPocztowyDostarczenia.Location = new System.Drawing.Point(23, 518);
             this.txt_KodPocztowyDostarczenia.Name = "txt_KodPocztowyDostarczenia";
             this.txt_KodPocztowyDostarczenia.Size = new System.Drawing.Size(167, 20);
-            this.txt_KodPocztowyDostarczenia.TabIndex = 18;
+            this.txt_KodPocztowyDostarczenia.TabIndex = 12;
             // 
             // txt_KrajDostarczenia
             // 
@@ -248,7 +250,7 @@
             this.txt_KrajDostarczenia.Location = new System.Drawing.Point(23, 435);
             this.txt_KrajDostarczenia.Name = "txt_KrajDostarczenia";
             this.txt_KrajDostarczenia.Size = new System.Drawing.Size(167, 20);
-            this.txt_KrajDostarczenia.TabIndex = 19;
+            this.txt_KrajDostarczenia.TabIndex = 10;
             // 
             // label9
             // 
@@ -292,10 +294,12 @@
             // 
             // txt_OsobaKontakt
             // 
+            this.txt_OsobaKontakt.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_OsobaKontakt.Location = new System.Drawing.Point(406, 76);
             this.txt_OsobaKontakt.Name = "txt_OsobaKontakt";
             this.txt_OsobaKontakt.Size = new System.Drawing.Size(132, 20);
-            this.txt_OsobaKontakt.TabIndex = 26;
+            this.txt_OsobaKontakt.TabIndex = 5;
+            this.txt_OsobaKontakt.Text = "OPCJONALNE";
             this.txt_OsobaKontakt.TextChanged += new System.EventHandler(this.txt_OsobaKontakt_TextChanged);
             // 
             // label8
@@ -310,10 +314,12 @@
             // 
             // txt_StanowiskoKontakt
             // 
+            this.txt_StanowiskoKontakt.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_StanowiskoKontakt.Location = new System.Drawing.Point(406, 114);
             this.txt_StanowiskoKontakt.Name = "txt_StanowiskoKontakt";
             this.txt_StanowiskoKontakt.Size = new System.Drawing.Size(132, 20);
-            this.txt_StanowiskoKontakt.TabIndex = 28;
+            this.txt_StanowiskoKontakt.TabIndex = 6;
+            this.txt_StanowiskoKontakt.Text = "OPCJONALNE";
             this.txt_StanowiskoKontakt.TextChanged += new System.EventHandler(this.txt_StanowiskoKontakt_TextChanged);
             // 
             // label13
@@ -328,10 +334,12 @@
             // 
             // txt_VatNo
             // 
+            this.txt_VatNo.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_VatNo.Location = new System.Drawing.Point(406, 255);
             this.txt_VatNo.Name = "txt_VatNo";
             this.txt_VatNo.Size = new System.Drawing.Size(132, 20);
-            this.txt_VatNo.TabIndex = 30;
+            this.txt_VatNo.TabIndex = 9;
+            this.txt_VatNo.Text = "OPCJONALNE";
             this.txt_VatNo.TextChanged += new System.EventHandler(this.txt_VatNo_TextChanged);
             // 
             // label14
@@ -383,6 +391,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WprowadzanieNowegoKlienta";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.WprowadzanieNowegoKlienta_FormClosing);
+            this.Load += new System.EventHandler(this.WprowadzanieNowegoKlienta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

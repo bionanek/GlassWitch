@@ -15,16 +15,39 @@ namespace Glass_Witch
         ConnectWithDataBase cwd = new ConnectWithDataBase("VIP\\SQLEXPRESS", "GlassWitch");
 
 
+        public void TextGotFocus(object sender, EventArgs e)
+        {
+            TextBox tb = (TextBox)sender;
+            if (tb.Text == "OPCJONALNE")
+            {
+                tb.Text = "";
+                tb.ForeColor = Color.Black;
+            }
+
+        }
+
+
         public WprowadzanieNowegoKlienta()
         {
             InitializeComponent();
         }
+
+
+        private void WprowadzanieNowegoKlienta_Load(object sender, EventArgs e)
+        {
+            txt_OsobaKontakt.GotFocus += new EventHandler(this.TextGotFocus);
+            txt_StanowiskoKontakt.GotFocus += new EventHandler(this.TextGotFocus);
+            txt_Telefon.GotFocus += new EventHandler(this.TextGotFocus);
+            txt_VatNo.GotFocus += new EventHandler(this.TextGotFocus);
+        }
+
 
         private void WprowadzanieNowegoKlienta_FormClosing(object sender, FormClosingEventArgs e)
         {
             wybor wybor = new wybor();
             wybor.Show();
         }
+
 
         private void adres_faktury_CheckedChanged(object sender, EventArgs e)
         {
@@ -101,7 +124,7 @@ namespace Glass_Witch
 
         private void txt_OsobaKontakt_TextChanged(object sender, EventArgs e)
         {
-
+         
         }
 
         private void txt_StanowiskoKontakt_TextChanged(object sender, EventArgs e)
