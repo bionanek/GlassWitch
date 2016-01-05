@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox_NazwaFirmy = new System.Windows.Forms.TextBox();
-            this.textBox_KrajZamowienia = new System.Windows.Forms.TextBox();
-            this.textBox_MiastoZamowienia = new System.Windows.Forms.TextBox();
-            this.textBox_KodPocztowy = new System.Windows.Forms.TextBox();
-            this.textBox_Ulica = new System.Windows.Forms.TextBox();
-            this.textBox_Email = new System.Windows.Forms.TextBox();
-            this.textBox_Telefon = new System.Windows.Forms.TextBox();
+            this.txt_NazwaFirmy = new System.Windows.Forms.TextBox();
+            this.txt_KrajZamowienia = new System.Windows.Forms.TextBox();
+            this.txt_MiastoZamowienia = new System.Windows.Forms.TextBox();
+            this.txt_KodPocztowy = new System.Windows.Forms.TextBox();
+            this.txt_Ulica = new System.Windows.Forms.TextBox();
+            this.txt_Email = new System.Windows.Forms.TextBox();
+            this.txt_Telefon = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,78 +44,83 @@
             this.label7 = new System.Windows.Forms.Label();
             this.adres_faktury = new System.Windows.Forms.CheckBox();
             this.button_DoZamowienia = new System.Windows.Forms.Button();
-            this.textBox_MiastoDostarczenia = new System.Windows.Forms.TextBox();
-            this.textBox_UlicaDostarczenia = new System.Windows.Forms.TextBox();
-            this.textBox_KodPocztowyDostarczenia = new System.Windows.Forms.TextBox();
-            this.textBox_KrajDostarczenia = new System.Windows.Forms.TextBox();
+            this.txt_MiastoDostarczenia = new System.Windows.Forms.TextBox();
+            this.txt_UlicaDostarczenia = new System.Windows.Forms.TextBox();
+            this.txt_KodPocztowyDostarczenia = new System.Windows.Forms.TextBox();
+            this.txt_KrajDostarczenia = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.txt_OsobaKontakt = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_StanowiskoKontakt = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txt_VatNo = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox_NazwaFirmy
+            // txt_NazwaFirmy
             // 
-            this.textBox_NazwaFirmy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox_NazwaFirmy.Location = new System.Drawing.Point(23, 70);
-            this.textBox_NazwaFirmy.Name = "textBox_NazwaFirmy";
-            this.textBox_NazwaFirmy.Size = new System.Drawing.Size(167, 20);
-            this.textBox_NazwaFirmy.TabIndex = 0;
-            this.textBox_NazwaFirmy.TextChanged += new System.EventHandler(this.textBox_NazwaFirmy_TextChanged);
+            this.txt_NazwaFirmy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_NazwaFirmy.Location = new System.Drawing.Point(23, 70);
+            this.txt_NazwaFirmy.Name = "txt_NazwaFirmy";
+            this.txt_NazwaFirmy.Size = new System.Drawing.Size(167, 20);
+            this.txt_NazwaFirmy.TabIndex = 0;
             // 
-            // textBox_KrajZamowienia
+            // txt_KrajZamowienia
             // 
-            this.textBox_KrajZamowienia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox_KrajZamowienia.Location = new System.Drawing.Point(23, 111);
-            this.textBox_KrajZamowienia.Name = "textBox_KrajZamowienia";
-            this.textBox_KrajZamowienia.Size = new System.Drawing.Size(167, 20);
-            this.textBox_KrajZamowienia.TabIndex = 1;
-            this.textBox_KrajZamowienia.TextChanged += new System.EventHandler(this.textBox_KrajZamowienia_TextChanged);
+            this.txt_KrajZamowienia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_KrajZamowienia.Location = new System.Drawing.Point(23, 111);
+            this.txt_KrajZamowienia.Name = "txt_KrajZamowienia";
+            this.txt_KrajZamowienia.Size = new System.Drawing.Size(167, 20);
+            this.txt_KrajZamowienia.TabIndex = 1;
+            this.txt_KrajZamowienia.TextChanged += new System.EventHandler(this.txt_KrajZamowienia_TextChanged);
             // 
-            // textBox_MiastoZamowienia
+            // txt_MiastoZamowienia
             // 
-            this.textBox_MiastoZamowienia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox_MiastoZamowienia.Location = new System.Drawing.Point(23, 158);
-            this.textBox_MiastoZamowienia.Name = "textBox_MiastoZamowienia";
-            this.textBox_MiastoZamowienia.Size = new System.Drawing.Size(167, 20);
-            this.textBox_MiastoZamowienia.TabIndex = 2;
-            this.textBox_MiastoZamowienia.TextChanged += new System.EventHandler(this.textBox_MiastoZamowienia_TextChanged);
+            this.txt_MiastoZamowienia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_MiastoZamowienia.Location = new System.Drawing.Point(23, 158);
+            this.txt_MiastoZamowienia.Name = "txt_MiastoZamowienia";
+            this.txt_MiastoZamowienia.Size = new System.Drawing.Size(167, 20);
+            this.txt_MiastoZamowienia.TabIndex = 2;
+            this.txt_MiastoZamowienia.TextChanged += new System.EventHandler(this.txt_MiastoZamowienia_TextChanged);
             // 
-            // textBox_KodPocztowy
+            // txt_KodPocztowy
             // 
-            this.textBox_KodPocztowy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox_KodPocztowy.Location = new System.Drawing.Point(23, 205);
-            this.textBox_KodPocztowy.Name = "textBox_KodPocztowy";
-            this.textBox_KodPocztowy.Size = new System.Drawing.Size(167, 20);
-            this.textBox_KodPocztowy.TabIndex = 3;
-            this.textBox_KodPocztowy.TextChanged += new System.EventHandler(this.textBox_KodPocztowy_TextChanged);
+            this.txt_KodPocztowy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_KodPocztowy.Location = new System.Drawing.Point(23, 205);
+            this.txt_KodPocztowy.Name = "txt_KodPocztowy";
+            this.txt_KodPocztowy.Size = new System.Drawing.Size(167, 20);
+            this.txt_KodPocztowy.TabIndex = 3;
+            this.txt_KodPocztowy.TextChanged += new System.EventHandler(this.txt_KodPocztowy_TextChanged);
             // 
-            // textBox_Ulica
+            // txt_Ulica
             // 
-            this.textBox_Ulica.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox_Ulica.Location = new System.Drawing.Point(23, 252);
-            this.textBox_Ulica.Name = "textBox_Ulica";
-            this.textBox_Ulica.Size = new System.Drawing.Size(167, 20);
-            this.textBox_Ulica.TabIndex = 4;
-            this.textBox_Ulica.TextChanged += new System.EventHandler(this.textBox_Ulica_TextChanged);
+            this.txt_Ulica.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_Ulica.Location = new System.Drawing.Point(23, 252);
+            this.txt_Ulica.Name = "txt_Ulica";
+            this.txt_Ulica.Size = new System.Drawing.Size(167, 20);
+            this.txt_Ulica.TabIndex = 4;
+            this.txt_Ulica.TextChanged += new System.EventHandler(this.txt_Ulica_TextChanged);
             // 
-            // textBox_Email
+            // txt_Email
             // 
-            this.textBox_Email.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox_Email.Location = new System.Drawing.Point(406, 70);
-            this.textBox_Email.Name = "textBox_Email";
-            this.textBox_Email.Size = new System.Drawing.Size(132, 20);
-            this.textBox_Email.TabIndex = 5;
-            this.textBox_Email.TextChanged += new System.EventHandler(this.textBox_Email_TextChanged);
+            this.txt_Email.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_Email.Location = new System.Drawing.Point(406, 162);
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.Size = new System.Drawing.Size(132, 20);
+            this.txt_Email.TabIndex = 5;
+            this.txt_Email.TextChanged += new System.EventHandler(this.txt_Email_TextChanged);
             // 
-            // textBox_Telefon
+            // txt_Telefon
             // 
-            this.textBox_Telefon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox_Telefon.Location = new System.Drawing.Point(406, 111);
-            this.textBox_Telefon.Name = "textBox_Telefon";
-            this.textBox_Telefon.Size = new System.Drawing.Size(132, 20);
-            this.textBox_Telefon.TabIndex = 6;
-            this.textBox_Telefon.TextChanged += new System.EventHandler(this.textBox_Telefon_TextChanged);
+            this.txt_Telefon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_Telefon.Location = new System.Drawing.Point(406, 209);
+            this.txt_Telefon.Name = "txt_Telefon";
+            this.txt_Telefon.Size = new System.Drawing.Size(132, 20);
+            this.txt_Telefon.TabIndex = 6;
+            this.txt_Telefon.TextChanged += new System.EventHandler(this.txt_Telefon_TextChanged);
             // 
             // label1
             // 
@@ -133,9 +138,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(220, 115);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 16);
+            this.label2.Size = new System.Drawing.Size(122, 16);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Kraj zamówienia";
+            this.label2.Text = "Kraj Zamówienia";
             // 
             // label3
             // 
@@ -171,7 +176,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(544, 74);
+            this.label6.Location = new System.Drawing.Point(553, 162);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 16);
             this.label6.TabIndex = 12;
@@ -181,7 +186,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(544, 115);
+            this.label7.Location = new System.Drawing.Point(553, 213);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 16);
             this.label7.TabIndex = 13;
@@ -213,41 +218,37 @@
             this.button_DoZamowienia.UseVisualStyleBackColor = true;
             this.button_DoZamowienia.Click += new System.EventHandler(this.button_DoZamowienia_Click);
             // 
-            // textBox_MiastoDostarczenia
+            // txt_MiastoDostarczenia
             // 
-            this.textBox_MiastoDostarczenia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox_MiastoDostarczenia.Location = new System.Drawing.Point(23, 478);
-            this.textBox_MiastoDostarczenia.Name = "textBox_MiastoDostarczenia";
-            this.textBox_MiastoDostarczenia.Size = new System.Drawing.Size(167, 20);
-            this.textBox_MiastoDostarczenia.TabIndex = 16;
-            this.textBox_MiastoDostarczenia.TextChanged += new System.EventHandler(this.textBox_MiastoDostarczenia_TextChanged);
+            this.txt_MiastoDostarczenia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_MiastoDostarczenia.Location = new System.Drawing.Point(23, 478);
+            this.txt_MiastoDostarczenia.Name = "txt_MiastoDostarczenia";
+            this.txt_MiastoDostarczenia.Size = new System.Drawing.Size(167, 20);
+            this.txt_MiastoDostarczenia.TabIndex = 16;
             // 
-            // textBox_UlicaDostarczenia
+            // txt_UlicaDostarczenia
             // 
-            this.textBox_UlicaDostarczenia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox_UlicaDostarczenia.Location = new System.Drawing.Point(23, 560);
-            this.textBox_UlicaDostarczenia.Name = "textBox_UlicaDostarczenia";
-            this.textBox_UlicaDostarczenia.Size = new System.Drawing.Size(167, 20);
-            this.textBox_UlicaDostarczenia.TabIndex = 17;
-            this.textBox_UlicaDostarczenia.TextChanged += new System.EventHandler(this.textBox_UlicaDostarczenia_TextChanged);
+            this.txt_UlicaDostarczenia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_UlicaDostarczenia.Location = new System.Drawing.Point(23, 560);
+            this.txt_UlicaDostarczenia.Name = "txt_UlicaDostarczenia";
+            this.txt_UlicaDostarczenia.Size = new System.Drawing.Size(167, 20);
+            this.txt_UlicaDostarczenia.TabIndex = 17;
             // 
-            // textBox_KodPocztowyDostarczenia
+            // txt_KodPocztowyDostarczenia
             // 
-            this.textBox_KodPocztowyDostarczenia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox_KodPocztowyDostarczenia.Location = new System.Drawing.Point(23, 518);
-            this.textBox_KodPocztowyDostarczenia.Name = "textBox_KodPocztowyDostarczenia";
-            this.textBox_KodPocztowyDostarczenia.Size = new System.Drawing.Size(167, 20);
-            this.textBox_KodPocztowyDostarczenia.TabIndex = 18;
-            this.textBox_KodPocztowyDostarczenia.TextChanged += new System.EventHandler(this.textBox_KodPocztowyDostarczenia_TextChanged);
+            this.txt_KodPocztowyDostarczenia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_KodPocztowyDostarczenia.Location = new System.Drawing.Point(23, 518);
+            this.txt_KodPocztowyDostarczenia.Name = "txt_KodPocztowyDostarczenia";
+            this.txt_KodPocztowyDostarczenia.Size = new System.Drawing.Size(167, 20);
+            this.txt_KodPocztowyDostarczenia.TabIndex = 18;
             // 
-            // textBox_KrajDostarczenia
+            // txt_KrajDostarczenia
             // 
-            this.textBox_KrajDostarczenia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox_KrajDostarczenia.Location = new System.Drawing.Point(23, 435);
-            this.textBox_KrajDostarczenia.Name = "textBox_KrajDostarczenia";
-            this.textBox_KrajDostarczenia.Size = new System.Drawing.Size(167, 20);
-            this.textBox_KrajDostarczenia.TabIndex = 19;
-            this.textBox_KrajDostarczenia.TextChanged += new System.EventHandler(this.textBox_KrajDostarczenia_TextChanged);
+            this.txt_KrajDostarczenia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_KrajDostarczenia.Location = new System.Drawing.Point(23, 435);
+            this.txt_KrajDostarczenia.Name = "txt_KrajDostarczenia";
+            this.txt_KrajDostarczenia.Size = new System.Drawing.Size(167, 20);
+            this.txt_KrajDostarczenia.TabIndex = 19;
             // 
             // label9
             // 
@@ -289,19 +290,79 @@
             this.label12.TabIndex = 25;
             this.label12.Text = "Ulica";
             // 
+            // txt_OsobaKontakt
+            // 
+            this.txt_OsobaKontakt.Location = new System.Drawing.Point(406, 76);
+            this.txt_OsobaKontakt.Name = "txt_OsobaKontakt";
+            this.txt_OsobaKontakt.Size = new System.Drawing.Size(132, 20);
+            this.txt_OsobaKontakt.TabIndex = 26;
+            this.txt_OsobaKontakt.TextChanged += new System.EventHandler(this.txt_OsobaKontakt_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(553, 77);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(137, 16);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Osoba Kontaktowa";
+            // 
+            // txt_StanowiskoKontakt
+            // 
+            this.txt_StanowiskoKontakt.Location = new System.Drawing.Point(406, 114);
+            this.txt_StanowiskoKontakt.Name = "txt_StanowiskoKontakt";
+            this.txt_StanowiskoKontakt.Size = new System.Drawing.Size(132, 20);
+            this.txt_StanowiskoKontakt.TabIndex = 28;
+            this.txt_StanowiskoKontakt.TextChanged += new System.EventHandler(this.txt_StanowiskoKontakt_TextChanged);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(553, 118);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(154, 16);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "Stanowisko Kontaktu ";
+            // 
+            // txt_VatNo
+            // 
+            this.txt_VatNo.Location = new System.Drawing.Point(406, 255);
+            this.txt_VatNo.Name = "txt_VatNo";
+            this.txt_VatNo.Size = new System.Drawing.Size(132, 20);
+            this.txt_VatNo.TabIndex = 30;
+            this.txt_VatNo.TextChanged += new System.EventHandler(this.txt_VatNo_TextChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(553, 259);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(62, 16);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "VAT No";
+            // 
             // WprowadzanieNowegoKlienta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 421);
+            this.ClientSize = new System.Drawing.Size(734, 421);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.txt_VatNo);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.txt_StanowiskoKontakt);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txt_OsobaKontakt);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox_KrajDostarczenia);
-            this.Controls.Add(this.textBox_KodPocztowyDostarczenia);
-            this.Controls.Add(this.textBox_UlicaDostarczenia);
-            this.Controls.Add(this.textBox_MiastoDostarczenia);
+            this.Controls.Add(this.txt_KrajDostarczenia);
+            this.Controls.Add(this.txt_KodPocztowyDostarczenia);
+            this.Controls.Add(this.txt_UlicaDostarczenia);
+            this.Controls.Add(this.txt_MiastoDostarczenia);
             this.Controls.Add(this.button_DoZamowienia);
             this.Controls.Add(this.adres_faktury);
             this.Controls.Add(this.label7);
@@ -311,13 +372,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox_Telefon);
-            this.Controls.Add(this.textBox_Email);
-            this.Controls.Add(this.textBox_Ulica);
-            this.Controls.Add(this.textBox_KodPocztowy);
-            this.Controls.Add(this.textBox_MiastoZamowienia);
-            this.Controls.Add(this.textBox_KrajZamowienia);
-            this.Controls.Add(this.textBox_NazwaFirmy);
+            this.Controls.Add(this.txt_Telefon);
+            this.Controls.Add(this.txt_Email);
+            this.Controls.Add(this.txt_Ulica);
+            this.Controls.Add(this.txt_KodPocztowy);
+            this.Controls.Add(this.txt_MiastoZamowienia);
+            this.Controls.Add(this.txt_KrajZamowienia);
+            this.Controls.Add(this.txt_NazwaFirmy);
             this.Name = "WprowadzanieNowegoKlienta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WprowadzanieNowegoKlienta";
@@ -329,13 +390,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox_NazwaFirmy;
-        private System.Windows.Forms.TextBox textBox_KrajZamowienia;
-        private System.Windows.Forms.TextBox textBox_MiastoZamowienia;
-        private System.Windows.Forms.TextBox textBox_KodPocztowy;
-        private System.Windows.Forms.TextBox textBox_Ulica;
-        private System.Windows.Forms.TextBox textBox_Email;
-        private System.Windows.Forms.TextBox textBox_Telefon;
+        private System.Windows.Forms.TextBox txt_NazwaFirmy;
+        private System.Windows.Forms.TextBox txt_KrajZamowienia;
+        private System.Windows.Forms.TextBox txt_MiastoZamowienia;
+        private System.Windows.Forms.TextBox txt_KodPocztowy;
+        private System.Windows.Forms.TextBox txt_Ulica;
+        private System.Windows.Forms.TextBox txt_Email;
+        private System.Windows.Forms.TextBox txt_Telefon;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -345,13 +406,19 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox adres_faktury;
         private System.Windows.Forms.Button button_DoZamowienia;
-        private System.Windows.Forms.TextBox textBox_MiastoDostarczenia;
-        private System.Windows.Forms.TextBox textBox_UlicaDostarczenia;
-        private System.Windows.Forms.TextBox textBox_KodPocztowyDostarczenia;
-        private System.Windows.Forms.TextBox textBox_KrajDostarczenia;
+        private System.Windows.Forms.TextBox txt_MiastoDostarczenia;
+        private System.Windows.Forms.TextBox txt_UlicaDostarczenia;
+        private System.Windows.Forms.TextBox txt_KodPocztowyDostarczenia;
+        private System.Windows.Forms.TextBox txt_KrajDostarczenia;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txt_OsobaKontakt;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_StanowiskoKontakt;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txt_VatNo;
+        private System.Windows.Forms.Label label14;
     }
 }
