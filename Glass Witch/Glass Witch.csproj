@@ -79,6 +79,12 @@
     <Compile Include="SkładanieZamówienia.Designer.cs">
       <DependentUpon>SkładanieZamówienia.cs</DependentUpon>
     </Compile>
+    <Compile Include="StaliKlienci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaliKlienci.Designer.cs">
+      <DependentUpon>StaliKlienci.cs</DependentUpon>
+    </Compile>
     <Compile Include="StaliKlienciModel.cs" />
     <Compile Include="Start.cs">
       <SubType>Form</SubType>
@@ -93,6 +99,12 @@
     </Compile>
     <Compile Include="WprowadzanieNowegoKlienta.Designer.cs">
       <DependentUpon>WprowadzanieNowegoKlienta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WszystkieZamowienia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WszystkieZamowienia.Designer.cs">
+      <DependentUpon>WszystkieZamowienia.cs</DependentUpon>
     </Compile>
     <Compile Include="wybor.cs">
       <SubType>Form</SubType>
@@ -112,6 +124,9 @@
     <EmbeddedResource Include="SkładanieZamówienia.resx">
       <DependentUpon>SkładanieZamówienia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StaliKlienci.resx">
+      <DependentUpon>StaliKlienci.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +142,9 @@
     </Compile>
     <EmbeddedResource Include="WprowadzanieNowegoKlienta.resx">
       <DependentUpon>WprowadzanieNowegoKlienta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WszystkieZamowienia.resx">
+      <DependentUpon>WszystkieZamowienia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="wybor.resx">
       <DependentUpon>wybor.cs</DependentUpon>

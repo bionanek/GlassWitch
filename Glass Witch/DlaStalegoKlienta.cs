@@ -24,6 +24,7 @@ namespace Glass_Witch
         string kraj;
         string daneKlienta;
         DataTable wszyscyKlienci;
+        DataTable dane_klienta;
 
         StaliKlienciModel skm = new StaliKlienciModel();
         ConnectWithDataBase cwd = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
@@ -35,6 +36,7 @@ namespace Glass_Witch
 
         private void DlaStalegoKlienta_Load(object sender, EventArgs e)
         {
+            this.Size = new Size(358, 393);
             wszyscyKlienci = cwd.download_data("select Nazwa, Kraj from Klienci");
             dgv1_zamStaliKlienci.DataSource = wszyscyKlienci;
             dgv1_zamStaliKlienci.Rows[0].Selected = false;
@@ -48,6 +50,7 @@ namespace Glass_Witch
             {
                 daneKlienta += cwd.download_data("Select * from Klienci where Nazwa = '" + nazwa + "'").Rows[0][i].ToString() + " ";
             }
+            
             return daneKlienta;
         }
 
@@ -64,6 +67,7 @@ namespace Glass_Witch
             bool znalezione = false;
             bool pierwszePrzejscie = false;
             DataTable zawartoscWiersza = wszyscyKlienci.Clone();
+            
             if (string.IsNullOrWhiteSpace(txt_szukajKlienta.Text))
             {
                 dgv1_zamStaliKlienci.DataSource = wszyscyKlienci;
@@ -133,8 +137,24 @@ namespace Glass_Witch
             this.Hide();
             wybor wybor = new wybor();
             wybor.Show();
+
         }
 
+        private void but_DoZamowienia_Click(object sender, EventArgs e)
+        {
+            Zamowienie zamowienie = new Zamowienie(dane_klienta);
+            this.Hide();
+            zamowienie.Show();
+        }
+
+        private void dgv1_zamStaliKlienci_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dane_klienta = cwd.download_data("Select * from Klienci where Nazwa like '" + 
+                dgv1_zamStaliKlienci.Rows[e.RowIndex].Cells[0].Value.ToString() + "'");
+
+            this.Size = new Size(358, 449);
+            but_DoZamowienia.Visible = true;
+        }
     }
 }
 

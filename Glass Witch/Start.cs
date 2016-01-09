@@ -35,7 +35,21 @@ namespace Glass_Witch
             ConnectWithDataBase baza = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
             dataGridView1.DataSource = baza.download_data("Select * from Produkty");
         }
+
+        private void but_wszystkie_Click(object sender, EventArgs e)
+        {
+            WszystkieZamowienia wz = new WszystkieZamowienia();
+            this.Hide();
+            wz.Show();
+
+        }
+
+        private void but_klienci_Click(object sender, EventArgs e)
+        {
+            StaliKlienci sk = new StaliKlienci();
+            this.Hide();
+            sk.Show();
+        }
     }
 }
 
-// RUCHANKO W DUPALA DUPALA DUPALA

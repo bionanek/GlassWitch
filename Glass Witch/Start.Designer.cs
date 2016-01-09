@@ -67,6 +67,7 @@
             this.but_wszystkie.TabIndex = 1;
             this.but_wszystkie.Text = "Wszystkie Zamówienia";
             this.but_wszystkie.UseVisualStyleBackColor = true;
+            this.but_wszystkie.Click += new System.EventHandler(this.but_wszystkie_Click);
             // 
             // but_klienci
             // 
@@ -77,6 +78,7 @@
             this.but_klienci.TabIndex = 3;
             this.but_klienci.Text = "Stali Klienci";
             this.but_klienci.UseVisualStyleBackColor = true;
+            this.but_klienci.Click += new System.EventHandler(this.but_klienci_Click);
             // 
             // button1
             // 

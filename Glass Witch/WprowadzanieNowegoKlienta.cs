@@ -12,7 +12,7 @@ namespace Glass_Witch
     public partial class WprowadzanieNowegoKlienta : Form
     {
 
-        ConnectWithDataBase cwd = new ConnectWithDataBase("VIP\\SQLEXPRESS", "GlassWitch");
+        ConnectWithDataBase cwd = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
 
 
         public void TextGotFocus(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace Glass_Witch
                 txt_Ulica.Text + "', '" +
                 txt_MiastoZamowienia.Text + "', '" +
                 txt_KodPocztowy.Text + "', '" +
-                txt_KrajDostarczenia.Text + "', '" +
+                txt_KrajZamowienia.Text + "', '" +
                 txt_VatNo.Text + "', '" +                   //OPCJONALNE
                 txt_Telefon.Text + "', '" +                 //OPCJONALNE
                 txt_Email.Text + "') ");

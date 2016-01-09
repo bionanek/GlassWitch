@@ -36,6 +36,7 @@
             this.but_szukajKlienta = new System.Windows.Forms.Button();
             this.dgv1_zamStaliKlienci = new System.Windows.Forms.DataGridView();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.but_DoZamowienia = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1_zamStaliKlienci)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,10 +73,12 @@
             // dgv1_zamStaliKlienci
             // 
             this.dgv1_zamStaliKlienci.AllowUserToAddRows = false;
+            this.dgv1_zamStaliKlienci.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.NullValue = "brak";
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.dgv1_zamStaliKlienci.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv1_zamStaliKlienci.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv1_zamStaliKlienci.BackgroundColor = System.Drawing.Color.Silver;
             this.dgv1_zamStaliKlienci.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv1_zamStaliKlienci.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -96,13 +99,27 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv1_zamStaliKlienci.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv1_zamStaliKlienci.Location = new System.Drawing.Point(44, 106);
+            this.dgv1_zamStaliKlienci.Location = new System.Drawing.Point(41, 106);
             this.dgv1_zamStaliKlienci.Name = "dgv1_zamStaliKlienci";
             this.dgv1_zamStaliKlienci.ReadOnly = true;
+            this.dgv1_zamStaliKlienci.RowHeadersVisible = false;
             this.dgv1_zamStaliKlienci.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv1_zamStaliKlienci.Size = new System.Drawing.Size(260, 241);
             this.dgv1_zamStaliKlienci.TabIndex = 3;
+            this.dgv1_zamStaliKlienci.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv1_zamStaliKlienci_CellClick);
             this.dgv1_zamStaliKlienci.SelectionChanged += new System.EventHandler(this.dgv1_zamStaliKlienci_SelectionChanged);
+            // 
+            // but_DoZamowienia
+            // 
+            this.but_DoZamowienia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.but_DoZamowienia.Location = new System.Drawing.Point(93, 353);
+            this.but_DoZamowienia.Name = "but_DoZamowienia";
+            this.but_DoZamowienia.Size = new System.Drawing.Size(152, 45);
+            this.but_DoZamowienia.TabIndex = 4;
+            this.but_DoZamowienia.Text = "Przejdź do zamówenia";
+            this.but_DoZamowienia.UseVisualStyleBackColor = true;
+            this.but_DoZamowienia.Visible = false;
+            this.but_DoZamowienia.Click += new System.EventHandler(this.but_DoZamowienia_Click);
             // 
             // DlaStalegoKlienta
             // 
@@ -110,7 +127,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(342, 359);
+            this.ClientSize = new System.Drawing.Size(342, 410);
+            this.Controls.Add(this.but_DoZamowienia);
             this.Controls.Add(this.dgv1_zamStaliKlienci);
             this.Controls.Add(this.but_szukajKlienta);
             this.Controls.Add(this.lab_staliKlienci);
@@ -133,5 +151,6 @@
         private System.Windows.Forms.Button but_szukajKlienta;
         private System.Windows.Forms.DataGridView dgv1_zamStaliKlienci;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Button but_DoZamowienia;
     }
 }
