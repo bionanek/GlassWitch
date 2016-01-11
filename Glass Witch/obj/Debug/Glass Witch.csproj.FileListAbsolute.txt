@@ -27,3 +27,6 @@ C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch
 C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.exe
 C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.pdb
 C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.SkładanieZamówienia.resources
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.SkładanieZamówienia.resources
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.StaliKlienci.resources
+C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.WszystkieZamowienia.resources

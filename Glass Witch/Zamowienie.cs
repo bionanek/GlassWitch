@@ -13,6 +13,7 @@ namespace Glass_Witch
     {
         DataTable klient;
         DateTime CurrentDate = DateTime.Today;
+        ConnectWithDataBase cwd = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
         public Zamowienie(DataTable dane_klient)
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace Glass_Witch
 
         private void Zamowienie_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = klient;
+            dataGridView1.DataSource = cwd.download_data("select * from Produkty");
             lab_nazwa.Text = klient.Rows[0]["Nazwa"].ToString();
             lab_ulica.Text = klient.Rows[0]["Ulica"].ToString();
             lab_KrajKod.Text = klient.Rows[0]["KodPocztowy"].ToString() + " " +
