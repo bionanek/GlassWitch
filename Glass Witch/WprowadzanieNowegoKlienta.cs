@@ -12,7 +12,7 @@ namespace Glass_Witch
     public partial class WprowadzanieNowegoKlienta : Form
     {
 
-        ConnectWithDataBase cwd = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
+        ConnectWithDataBase cwd = new ConnectWithDataBase("VIP\\SQLEXPRESS", "GlassWitch");
 
 
         public void TextGotFocus(object sender, EventArgs e)
@@ -92,85 +92,5 @@ namespace Glass_Witch
                 DoZamowienia.Show();
             }
         }
-
-
-
-        //TEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃ
-
-        private void txt_NazwaFirmy_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txt_KrajZamowienia_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_MiastoZamowienia_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_KodPocztowy_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_Ulica_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_OsobaKontakt_TextChanged(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void txt_StanowiskoKontakt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_VatNo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_Email_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_Telefon_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        //TEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃTEXBOXY ZAMÓWIEŃ
-
-
-
-
-        //TEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃ
-        private void txt_KrajDostarczenia_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_MiastoDostarczenia_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_KodPocztowyDostarczenia_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_UlicaDostarczenia_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        //TEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃTEXTBOXY DOSTARCZEŃ
     }
 }
