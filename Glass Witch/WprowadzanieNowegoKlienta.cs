@@ -11,6 +11,7 @@ namespace Glass_Witch
 {
     public partial class WprowadzanieNowegoKlienta : Form
     {
+        //
 
         ConnectWithDataBase cwd = new ConnectWithDataBase("VIP\\SQLEXPRESS", "GlassWitch");
 

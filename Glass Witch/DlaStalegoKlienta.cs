@@ -15,6 +15,7 @@ namespace Glass_Witch
 {
     public partial class DlaStalegoKlienta : Form
     {
+        //
         SqlConnection connection = new SqlConnection();
         System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
 

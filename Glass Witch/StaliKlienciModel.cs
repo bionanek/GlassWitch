@@ -12,6 +12,7 @@ namespace Glass_Witch
 {
     class StaliKlienciModel
     {
+        //
         ConnectWithDataBase cwd = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
 
         public StaliKlienciModel()

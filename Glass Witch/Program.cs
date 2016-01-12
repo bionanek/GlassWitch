@@ -18,6 +18,7 @@ namespace Glass_Witch
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Start());
            // Application.Run(new DlaStalegoKlienta()); // MOJE USTAWIENIE, ŻEBY POMINĄĆ MENU
+           //
         }
     }
 }

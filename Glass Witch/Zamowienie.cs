@@ -11,6 +11,7 @@ namespace Glass_Witch
 {
     public partial class Zamowienie : Form
     {
+        //
         DataTable klient;
         DateTime CurrentDate = DateTime.Today;
         ConnectWithDataBase cwd = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");

@@ -11,6 +11,7 @@ namespace Glass_Witch
 {
     public partial class StaliKlienci : Form
     {
+        //
         ConnectWithDataBase cwd = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
         public StaliKlienci()
         {

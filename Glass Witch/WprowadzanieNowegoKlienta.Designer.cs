@@ -75,7 +75,6 @@
             this.txt_KrajZamowienia.Name = "txt_KrajZamowienia";
             this.txt_KrajZamowienia.Size = new System.Drawing.Size(167, 20);
             this.txt_KrajZamowienia.TabIndex = 1;
-            this.txt_KrajZamowienia.TextChanged += new System.EventHandler(this.txt_KrajZamowienia_TextChanged);
             // 
             // txt_MiastoZamowienia
             // 
@@ -84,7 +83,6 @@
             this.txt_MiastoZamowienia.Name = "txt_MiastoZamowienia";
             this.txt_MiastoZamowienia.Size = new System.Drawing.Size(167, 20);
             this.txt_MiastoZamowienia.TabIndex = 2;
-            this.txt_MiastoZamowienia.TextChanged += new System.EventHandler(this.txt_MiastoZamowienia_TextChanged);
             // 
             // txt_KodPocztowy
             // 
@@ -93,7 +91,6 @@
             this.txt_KodPocztowy.Name = "txt_KodPocztowy";
             this.txt_KodPocztowy.Size = new System.Drawing.Size(167, 20);
             this.txt_KodPocztowy.TabIndex = 3;
-            this.txt_KodPocztowy.TextChanged += new System.EventHandler(this.txt_KodPocztowy_TextChanged);
             // 
             // txt_Ulica
             // 
@@ -102,7 +99,6 @@
             this.txt_Ulica.Name = "txt_Ulica";
             this.txt_Ulica.Size = new System.Drawing.Size(167, 20);
             this.txt_Ulica.TabIndex = 4;
-            this.txt_Ulica.TextChanged += new System.EventHandler(this.txt_Ulica_TextChanged);
             // 
             // txt_Email
             // 
@@ -111,7 +107,6 @@
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(132, 20);
             this.txt_Email.TabIndex = 7;
-            this.txt_Email.TextChanged += new System.EventHandler(this.txt_Email_TextChanged);
             // 
             // txt_Telefon
             // 
@@ -122,7 +117,6 @@
             this.txt_Telefon.Size = new System.Drawing.Size(132, 20);
             this.txt_Telefon.TabIndex = 8;
             this.txt_Telefon.Text = "OPCJONALNE";
-            this.txt_Telefon.TextChanged += new System.EventHandler(this.txt_Telefon_TextChanged);
             // 
             // label1
             // 
@@ -300,7 +294,6 @@
             this.txt_OsobaKontakt.Size = new System.Drawing.Size(132, 20);
             this.txt_OsobaKontakt.TabIndex = 5;
             this.txt_OsobaKontakt.Text = "OPCJONALNE";
-            this.txt_OsobaKontakt.TextChanged += new System.EventHandler(this.txt_OsobaKontakt_TextChanged);
             // 
             // label8
             // 
@@ -320,7 +313,6 @@
             this.txt_StanowiskoKontakt.Size = new System.Drawing.Size(132, 20);
             this.txt_StanowiskoKontakt.TabIndex = 6;
             this.txt_StanowiskoKontakt.Text = "OPCJONALNE";
-            this.txt_StanowiskoKontakt.TextChanged += new System.EventHandler(this.txt_StanowiskoKontakt_TextChanged);
             // 
             // label13
             // 
@@ -340,7 +332,6 @@
             this.txt_VatNo.Size = new System.Drawing.Size(132, 20);
             this.txt_VatNo.TabIndex = 9;
             this.txt_VatNo.Text = "OPCJONALNE";
-            this.txt_VatNo.TextChanged += new System.EventHandler(this.txt_VatNo_TextChanged);
             // 
             // label14
             // 

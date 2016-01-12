@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace Glass_Witch
 {
+    //
     public partial class SkładanieZamówienia : Form
     {
         public SkładanieZamówienia()

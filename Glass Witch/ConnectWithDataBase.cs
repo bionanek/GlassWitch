@@ -9,6 +9,7 @@ using System.Data.SqlTypes;
 
 namespace Glass_Witch
 {
+    //
     class ConnectWithDataBase
     {
         private SqlConnection connection; //obiekt połączenia widoczny dla całej klasy

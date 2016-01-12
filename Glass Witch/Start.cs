@@ -13,6 +13,7 @@ namespace Glass_Witch
 {
     public partial class Start : Form
     {
+        //
         public Start()
         {
             InitializeComponent();

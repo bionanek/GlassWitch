@@ -12,6 +12,7 @@ namespace Glass_Witch
 {
     public partial class wybor : Form
     {
+        //
         public wybor()
         {
             InitializeComponent();
