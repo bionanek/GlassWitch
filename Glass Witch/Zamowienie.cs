@@ -14,7 +14,7 @@ namespace Glass_Witch
         //
         DataTable klient;
         DateTime CurrentDate = DateTime.Today;
-        ConnectWithDataBase cwd = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
+        ConnectWithDataBase cwd = new ConnectWithDataBase("ELVISZ\\SQLEXPRESS", "GlassWitch");
         public Zamowienie(DataTable dane_klient)
         {
             InitializeComponent();

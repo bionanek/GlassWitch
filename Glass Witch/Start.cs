@@ -33,7 +33,7 @@ namespace Glass_Witch
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ConnectWithDataBase baza = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
+            ConnectWithDataBase baza = new ConnectWithDataBase("ELVISZ\\SQLEXPRESS", "GlassWitch");
             dataGridView1.DataSource = baza.download_data("Select * from Produkty");
         }
 

@@ -73,7 +73,6 @@ namespace Glass_Witch
 
         public void PolaczZBaza()
         {
-
             
         }
     }

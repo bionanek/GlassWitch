@@ -28,7 +28,7 @@ namespace Glass_Witch
         DataTable dane_klienta;
 
         StaliKlienciModel skm = new StaliKlienciModel();
-        ConnectWithDataBase cwd = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch");
+        ConnectWithDataBase cwd = new ConnectWithDataBase("ELVISZ\\SQLEXPRESS", "GlassWitch");
         public DlaStalegoKlienta()
         {
             InitializeComponent();

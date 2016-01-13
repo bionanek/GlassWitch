@@ -30,3 +30,20 @@ C:\Users\oskar_000\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch
 C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.SkładanieZamówienia.resources
 C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.StaliKlienci.resources
 C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.WszystkieZamowienia.resources
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\Glass Witch.exe.config
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.exe
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.pdb
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\Glass Witch.exe
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\Glass Witch.pdb
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csprojResolveAssemblyReference.cache
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.DlaStalegoKlienta.resources
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.SkładanieZamówienia.resources
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.StaliKlienci.resources
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Start.resources
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Properties.Resources.resources
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.WprowadzanieNowegoKlienta.resources
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.WszystkieZamowienia.resources
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.wybor.resources
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Zamowienie.resources
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csproj.GenerateResource.Cache
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Dostarczenia.resources

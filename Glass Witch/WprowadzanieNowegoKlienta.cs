@@ -11,23 +11,18 @@ namespace Glass_Witch
 {
     public partial class WprowadzanieNowegoKlienta : Form
     {
-        //
-
-        ConnectWithDataBase cwd = new ConnectWithDataBase("VIP\\SQLEXPRESS", "GlassWitch");
-
+        ConnectWithDataBase cwd = new ConnectWithDataBase("ELVISZ\\SQLEXPRESS", "GlassWitch");
 
         public void TextGotFocus(object sender, EventArgs e)
         {
             TextBox tb = (TextBox)sender;
             if (tb.Text == "OPCJONALNE")
             {
-                tb.Text = "";
+                tb.Text = " ";
                 tb.ForeColor = Color.Black;
             }
-
-        }
-
-
+        } 
+        
         public WprowadzanieNowegoKlienta()
         {
             InitializeComponent();
@@ -35,11 +30,11 @@ namespace Glass_Witch
 
 
         private void WprowadzanieNowegoKlienta_Load(object sender, EventArgs e)
-        {
+        {            
             txt_OsobaKontakt.GotFocus += new EventHandler(this.TextGotFocus);
             txt_StanowiskoKontakt.GotFocus += new EventHandler(this.TextGotFocus);
             txt_Telefon.GotFocus += new EventHandler(this.TextGotFocus);
-            txt_VatNo.GotFocus += new EventHandler(this.TextGotFocus);
+            txt_VatNo.GotFocus += new EventHandler(this.TextGotFocus);  
         }
 
 
@@ -47,19 +42,6 @@ namespace Glass_Witch
         {
             wybor wybor = new wybor();
             wybor.Show();
-        }
-
-
-        private void adres_faktury_CheckedChanged(object sender, EventArgs e)
-        {
-            if (adres_faktury.Checked)
-            {
-                this.Size = new Size(750, 460);
-            }
-            else
-            {
-                this.Size = new Size(750, 645);
-            }
         }
 
         private void button_DoZamowienia_Click(object sender, EventArgs e)
@@ -72,25 +54,34 @@ namespace Glass_Witch
                 string.IsNullOrWhiteSpace(txt_Email.Text))
             {
 
-                MessageBox.Show("CHCE NOWE KRZESŁO");
+                MessageBox.Show("WYPEŁNIJ WSZYSTKIE WYMAGANE POLA");
 
             } else {
 
                 cwd.download_data("INSERT INTO Klienci VALUES ( '" +
                 txt_NazwaFirmy.Text + "', '" +
-                txt_OsobaKontakt.Text + "', '" +            //OPCJONALNE
-                txt_StanowiskoKontakt.Text + "', '" +       //OPCJONALNE
+                txt_OsobaKontakt.Text + "', '" +            //OP
+                txt_StanowiskoKontakt.Text + "', '" +       //OP
                 txt_Ulica.Text + "', '" +
                 txt_MiastoZamowienia.Text + "', '" +
                 txt_KodPocztowy.Text + "', '" +
                 txt_KrajZamowienia.Text + "', '" +
-                txt_VatNo.Text + "', '" +                   //OPCJONALNE
-                txt_Telefon.Text + "', '" +                 //OPCJONALNE
+                txt_VatNo.Text + "', '" +                   //OP
+                txt_Telefon.Text + "', '" +                 //OP
                 txt_Email.Text + "') ");
 
-                this.Hide();
-                SkładanieZamówienia DoZamowienia = new SkładanieZamówienia();
-                DoZamowienia.Show();
+                if (adres_faktury.Checked)
+                {
+                    this.Hide();
+                    SkładanieZamówienia DoZamowienia = new SkładanieZamówienia();
+                    DoZamowienia.Show();
+                }
+                else
+                {
+                    this.Hide();
+                    Dostarczenia DoDostarczenia = new Dostarczenia();
+                    DoDostarczenia.Show();
+                }                
             }
         }
     }

@@ -12,7 +12,7 @@ namespace Glass_Witch
     public partial class WszystkieZamowienia : Form
     {
         //
-        ConnectWithDataBase cwd = new ConnectWithDataBase("JAKUB\\SQLEXPRESS", "GlassWitch"); //
+        ConnectWithDataBase cwd = new ConnectWithDataBase("ELVISZ\\SQLEXPRESS", "GlassWitch"); //
         
         public WszystkieZamowienia()
         {
