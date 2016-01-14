@@ -49,6 +49,7 @@
             this.txt_szukajKlienta.Size = new System.Drawing.Size(152, 22);
             this.txt_szukajKlienta.TabIndex = 0;
             this.txt_szukajKlienta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_szukajKlienta.TextChanged += new System.EventHandler(this.txt_szukajKlienta_TextChanged_1);
             // 
             // lab_staliKlienci
             // 

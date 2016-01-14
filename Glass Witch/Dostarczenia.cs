@@ -13,7 +13,7 @@ namespace Glass_Witch
     {
         DateTime CurrentDate = DateTime.Today;
 
-        ConnectWithDataBase cwd = new ConnectWithDataBase("ELVISZ\\SQLEXPRESS", "GlassWitch");
+        ConnectWithDataBase cwd = new ConnectWithDataBase();
 
         public Dostarczenia()
         {

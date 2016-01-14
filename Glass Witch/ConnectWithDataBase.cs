@@ -17,16 +17,16 @@ namespace Glass_Witch
 
 
         /// <summary>
-        /// Konstruktor do tworzenia połączenia za pomocą autoryzacji SQL Server
+        /// Konstruktor do tworzenia połączenia za pomocą autoryzacji SQL Server.
+        /// Dane do połączenia się z Bazą Danych zostały już wpisane w klasie ConnectWithDataBase.
         /// </summary>
-        /// <param name="user">użytkownik</param>
-        /// <param name="pass">hasło</param>
-        /// <param name="instance">nazwa instancji</param>
-        /// <param name="dbdir">nazwa bazy danych</param>
-        public ConnectWithDataBase(string user, string pass, string instance, string dbdir)
+        public ConnectWithDataBase()
         {
             connection = new SqlConnection();
-            connection.ConnectionString = "";
+            connection.ConnectionString = "Server = localhost\\SQLEXPRESS    ;" +
+                                          "Database = GlassWitch;" +
+                                          "User Id = sa;" +
+                                          "Password = jakubelvisz;";
             connection.Open();
         }
 

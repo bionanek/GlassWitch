@@ -28,7 +28,7 @@ namespace Glass_Witch
         DataTable dane_klienta;
 
         StaliKlienciModel skm = new StaliKlienciModel();
-        ConnectWithDataBase cwd = new ConnectWithDataBase("ELVISZ\\SQLEXPRESS", "GlassWitch");
+        ConnectWithDataBase cwd = new ConnectWithDataBase();
         public DlaStalegoKlienta()
         {
             InitializeComponent();
@@ -64,43 +64,7 @@ namespace Glass_Witch
 
         private void but_szukajKlienta_Click(object sender, EventArgs e)
         {
-            string zawartoscKomorki = "";
-            bool znalezione = false;
-            bool pierwszePrzejscie = false;
-            DataTable zawartoscWiersza = wszyscyKlienci.Clone();
-            
-            if (string.IsNullOrWhiteSpace(txt_szukajKlienta.Text))
-            {
-                dgv1_zamStaliKlienci.DataSource = wszyscyKlienci;
-            }
-            else
-            {
-                for (int i = 0; i < wszyscyKlienci.Rows.Count; i++)
-                {
-                    znalezione = false;
-                    for (int j = 0; j < wszyscyKlienci.Columns.Count; j++)
-                    {
-                        zawartoscKomorki = wszyscyKlienci.Rows[i][j].ToString().ToLower();
-                        if (zawartoscKomorki.IndexOf(txt_szukajKlienta.Text) >= 0)
-                        {
-                            znalezione = true;
-                        }
-                        else { }
-                        if (znalezione == true)
-                        {
-                            if(pierwszePrzejscie == false)
-                            {
-                                pierwszePrzejscie = true;
-                                dgv1_zamStaliKlienci.DataSource = null;
-                            }
-                            zawartoscWiersza.ImportRow(wszyscyKlienci.Rows[i]);
-                            znalezione = false;
-                            dgv1_zamStaliKlienci.DataSource = zawartoscWiersza;
-
-                        }
-                    }
-                }
-            }
+           
         }
 
         private void dgv1_zamStaliKlienci_SelectionChanged(object sender, EventArgs e)
@@ -155,6 +119,47 @@ namespace Glass_Witch
 
             this.Size = new Size(358, 449);
             but_DoZamowienia.Visible = true;
+        }
+
+        private void txt_szukajKlienta_TextChanged_1(object sender, EventArgs e)
+        {
+            string zawartoscKomorki = "";
+            bool znalezione = false;
+            bool pierwszePrzejscie = false;
+            DataTable zawartoscWiersza = wszyscyKlienci.Clone();
+
+            if (string.IsNullOrWhiteSpace(txt_szukajKlienta.Text))
+            {
+                dgv1_zamStaliKlienci.DataSource = wszyscyKlienci;
+            }
+            else
+            {
+                for (int i = 0; i < wszyscyKlienci.Rows.Count; i++)
+                {
+                    znalezione = false;
+                    for (int j = 0; j < wszyscyKlienci.Columns.Count; j++)
+                    {
+                        zawartoscKomorki = wszyscyKlienci.Rows[i][j].ToString().ToLower();
+                        if (zawartoscKomorki.IndexOf(txt_szukajKlienta.Text.ToLower()) >= 0)
+                        {
+                            znalezione = true;
+                        }
+                        else { }
+                        if (znalezione == true)
+                        {
+                            if (pierwszePrzejscie == false)
+                            {
+                                pierwszePrzejscie = true;
+                                dgv1_zamStaliKlienci.DataSource = null;
+                            }
+                            zawartoscWiersza.ImportRow(wszyscyKlienci.Rows[i]);
+                            znalezione = false;
+                            dgv1_zamStaliKlienci.DataSource = zawartoscWiersza;
+
+                        }
+                    }
+                }
+            }
         }
     }
 }

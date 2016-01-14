@@ -11,7 +11,7 @@ namespace Glass_Witch
 {
     public partial class WprowadzanieNowegoKlienta : Form
     {
-        ConnectWithDataBase cwd = new ConnectWithDataBase("ELVISZ\\SQLEXPRESS", "GlassWitch");
+        ConnectWithDataBase cwd = new ConnectWithDataBase();
 
         public void TextGotFocus(object sender, EventArgs e)
         {
