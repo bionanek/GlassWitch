@@ -74,13 +74,9 @@ namespace Glass_Witch
                 txt_Telefon.Text + "', '" +                 //OPCJONALNE
                 txt_Email.Text + "') ");
 
-                if (adres_faktury.Checked)
+                if (adres_faktury.Checked = false)
                 {
-                    
-                }
-                else
-                {
-
+                                                       
                 cwd.download_data("INSERT INTO Zamowienia VALUES ( '" +
                 txt_Data.Text + "', '" +
                 txt_DataOczekiwana.Text + "', '" +
@@ -93,8 +89,7 @@ namespace Glass_Witch
 
                 this.Hide();
                 SkładanieZamówienia DoZamowienia = new SkładanieZamówienia();
-                DoZamowienia.Show();      
-                          
+                DoZamowienia.Show();
             }
         }
 
