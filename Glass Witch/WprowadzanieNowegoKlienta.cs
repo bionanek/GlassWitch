@@ -80,14 +80,21 @@ namespace Glass_Witch
                 }
                 else
                 {
-                    cwd.download_data("INSERT INTO Zamowienia VALUES ( '" +
-                    txt_Data.Text + "', '" +
-                    txt_DataOczekiwana.Text + "', '" +
-                    txt_UlicaDostarczenia.Text + "', '" +
-                    txt_MiastoDostarczenia.Text + "', '" +
-                    txt_KodPocztowyDostarczenia.Text + "', '" +
-                    txt_KrajDostarczenia.Text + "') ");
-                }                
+
+                cwd.download_data("INSERT INTO Zamowienia VALUES ( '" +
+                txt_Data.Text + "', '" +
+                txt_DataOczekiwana.Text + "', '" +
+                txt_UlicaDostarczenia.Text + "', '" +
+                txt_MiastoDostarczenia.Text + "', '" +
+                txt_KodPocztowyDostarczenia.Text + "', '" +
+                txt_KrajDostarczenia.Text + "') ");
+
+                }
+
+                this.Hide();
+                SkładanieZamówienia DoZamowienia = new SkładanieZamówienia();
+                DoZamowienia.Show();      
+                          
             }
         }
 
