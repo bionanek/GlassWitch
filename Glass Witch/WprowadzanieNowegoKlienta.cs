@@ -64,14 +64,14 @@ namespace Glass_Witch
 
                 cwd.download_data("INSERT INTO Klienci VALUES ( '" +
                 txt_NazwaFirmy.Text + "', '" +
-                txt_OsobaKontakt.Text + "', '" +            //OP
-                txt_StanowiskoKontakt.Text + "', '" +       //OP
+                txt_OsobaKontakt.Text + "', '" +            //OPCJONALNE
+                txt_StanowiskoKontakt.Text + "', '" +       //OPCJONALNE
                 txt_Ulica.Text + "', '" +
                 txt_MiastoZamowienia.Text + "', '" +
                 txt_KodPocztowy.Text + "', '" +
                 txt_KrajZamowienia.Text + "', '" +
-                txt_VatNo.Text + "', '" +                   //OP
-                txt_Telefon.Text + "', '" +                 //OP
+                txt_VatNo.Text + "', '" +                   //OPCJONALNE    
+                txt_Telefon.Text + "', '" +                 //OPCJONALNE
                 txt_Email.Text + "') ");
 
                 if (adres_faktury.Checked)
