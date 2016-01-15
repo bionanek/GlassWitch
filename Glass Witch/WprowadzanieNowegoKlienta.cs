@@ -11,6 +11,8 @@ namespace Glass_Witch
 {
     public partial class WprowadzanieNowegoKlienta : Form
     {
+        DateTime CurrentDate = DateTime.Today;
+
         ConnectWithDataBase cwd = new ConnectWithDataBase();
 
         public void TextGotFocus(object sender, EventArgs e)
@@ -30,7 +32,9 @@ namespace Glass_Witch
 
 
         private void WprowadzanieNowegoKlienta_Load(object sender, EventArgs e)
-        {            
+        {
+            txt_Data.Text = CurrentDate.ToString("d");
+
             txt_OsobaKontakt.GotFocus += new EventHandler(this.TextGotFocus);
             txt_StanowiskoKontakt.GotFocus += new EventHandler(this.TextGotFocus);
             txt_Telefon.GotFocus += new EventHandler(this.TextGotFocus);
@@ -72,16 +76,30 @@ namespace Glass_Witch
 
                 if (adres_faktury.Checked)
                 {
-                    this.Hide();
-                    SkładanieZamówienia DoZamowienia = new SkładanieZamówienia();
-                    DoZamowienia.Show();
+                    
                 }
                 else
                 {
-                    this.Hide();
-                    Dostarczenia DoDostarczenia = new Dostarczenia();
-                    DoDostarczenia.Show();
+                    cwd.download_data("INSERT INTO Zamowienia VALUES ( '" +
+                    txt_Data.Text + "', '" +
+                    txt_DataOczekiwana.Text + "', '" +
+                    txt_UlicaDostarczenia.Text + "', '" +
+                    txt_MiastoDostarczenia.Text + "', '" +
+                    txt_KodPocztowyDostarczenia.Text + "', '" +
+                    txt_KrajDostarczenia.Text + "') ");
                 }                
+            }
+        }
+
+        private void adres_faktury_CheckedChanged(object sender, EventArgs e)
+        {
+            if (adres_faktury.Checked)
+            {
+                this.Size = new Size(750, 400);
+            }
+            else
+            {
+                this.Size = new Size(750, 570);
             }
         }
     }

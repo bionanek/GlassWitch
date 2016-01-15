@@ -22,18 +22,12 @@ namespace Glass_Witch
 
         private void Dostarczenia_Load(object sender, EventArgs e)
         {
-            txt_Data.Text = CurrentDate.ToString("d");
+            
         }
 
         private void Zamowienie_Click(object sender, EventArgs e)
         {
-            cwd.download_data("INSERT INTO Zamowienia VALUES ( '" +
-                    txt_Data.Text + "', '" +
-                    txt_DataOczekiwana.Text + "', '" +
-                    txt_UlicaDostarczenia.Text + "', '" +
-                    txt_MiastoDostarczenia.Text + "', '" +
-                    txt_KodPocztowyDostarczenia.Text + "', '" +
-                    txt_KrajDostarczenia.Text + "') ");
+            
 
             this.Hide();
             SkładanieZamówienia DoZamowienia = new SkładanieZamówienia();
