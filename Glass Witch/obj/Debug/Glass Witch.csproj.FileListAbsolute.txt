@@ -47,4 +47,3 @@ C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.wyb
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Zamowienie.resources
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csproj.GenerateResource.Cache
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Dostarczenia.resources
-C:\Users\Kuba\Desktop\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Dostarczenia.resources

@@ -73,12 +73,6 @@
     <Compile Include="DlaStalegoKlienta.Designer.cs">
       <DependentUpon>DlaStalegoKlienta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dostarczenia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dostarczenia.Designer.cs">
-      <DependentUpon>Dostarczenia.cs</DependentUpon>
-    </Compile>
     <Compile Include="SkładanieZamówienia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,9 +120,6 @@
     </Compile>
     <EmbeddedResource Include="DlaStalegoKlienta.resx">
       <DependentUpon>DlaStalegoKlienta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dostarczenia.resx">
-      <DependentUpon>Dostarczenia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SkładanieZamówienia.resx">
       <DependentUpon>SkładanieZamówienia.cs</DependentUpon>

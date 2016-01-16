@@ -35,6 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lab_wersja = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,12 +110,22 @@
             this.lab_wersja.TabIndex = 6;
             this.lab_wersja.Text = "PreALFA v1.0";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(426, 98);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(120, 42);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1130, 638);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.lab_wersja);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
@@ -141,6 +152,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lab_wersja;
+        private System.Windows.Forms.Button button2;
     }
 }
 
