@@ -60,8 +60,8 @@ namespace Glass_Witch
 
                 MessageBox.Show("WYPEŁNIJ WSZYSTKIE WYMAGANE POLA");
 
-            } else {
-
+            } else
+            {
                 cwd.download_data("INSERT INTO Klienci VALUES ( '" +
                 txt_NazwaFirmy.Text + "', '" +
                 txt_OsobaKontakt.Text + "', '" +            //OPCJONALNE
@@ -74,12 +74,17 @@ namespace Glass_Witch
                 txt_Telefon.Text + "', '" +                 //OPCJONALNE
                 txt_Email.Text + "') ");
 
-                if (adres_faktury.Checked = false)
+                if (adres_faktury.Checked == false)
                 {
-                                                       
-                cwd.download_data("INSERT INTO Zamowienia VALUES ( '" +
-                txt_Data.Text + "', '" +
-                txt_DataOczekiwana.Text + "', '" +
+
+                int klientid =
+                       int.Parse(cwd.download_data("Select KlientID from Klienci where Nazwa = '" + 
+                       txt_NazwaFirmy.Text + "'").Rows[0][0].ToString());
+                cwd.download_data("INSERT INTO Zamowienia VALUES ( " +
+                klientid + " , '" +
+                CurrentDate + "', '" +
+                txt_DataOczekiwana.Text + "'," +
+                "null, '" +
                 txt_UlicaDostarczenia.Text + "', '" +
                 txt_MiastoDostarczenia.Text + "', '" +
                 txt_KodPocztowyDostarczenia.Text + "', '" +

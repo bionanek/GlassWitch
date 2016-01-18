@@ -35,11 +35,15 @@ namespace Glass_Witch
         {
             ConnectWithDataBase baza = new ConnectWithDataBase();
             dataGridView1.DataSource = baza.download_data("Select * from Produkty");
+            DataTable klientid =
+                      baza.download_data("Select KlientID from Klienci where Nazwa = 'Komozja'");
+            textBox1.Text = (int.Parse(klientid.Rows[0][0].ToString()) + 1).ToString();
         }
 
         private void but_wszystkie_Click(object sender, EventArgs e)
         {
             WszystkieZamowienia wz = new WszystkieZamowienia();
+
             this.Hide();
             wz.Show();
 
@@ -50,6 +54,11 @@ namespace Glass_Witch
             StaliKlienci sk = new StaliKlienci();
             this.Hide();
             sk.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
