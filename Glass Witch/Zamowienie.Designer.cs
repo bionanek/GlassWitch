@@ -37,7 +37,7 @@
             this.lab_mail = new System.Windows.Forms.Label();
             this.lab_osobaKontaktowa = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.but_zatwierdź = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,22 +129,23 @@
             this.button1.Text = "Edytuj Klienta";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // but_zatwierdź
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(496, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 32);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Zatwierdź";
-            this.button2.UseVisualStyleBackColor = true;
+            this.but_zatwierdź.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.but_zatwierdź.Location = new System.Drawing.Point(496, 12);
+            this.but_zatwierdź.Name = "but_zatwierdź";
+            this.but_zatwierdź.Size = new System.Drawing.Size(98, 32);
+            this.but_zatwierdź.TabIndex = 9;
+            this.but_zatwierdź.Text = "Zatwierdź";
+            this.but_zatwierdź.UseVisualStyleBackColor = true;
+            this.but_zatwierdź.Click += new System.EventHandler(this.but_zatwierdź_Click);
             // 
             // Zamowienie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 484);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.but_zatwierdź);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lab_osobaKontaktowa);
             this.Controls.Add(this.lab_mail);
@@ -175,6 +176,6 @@
         private System.Windows.Forms.Label lab_mail;
         private System.Windows.Forms.Label lab_osobaKontaktowa;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button but_zatwierdź;
     }
 }

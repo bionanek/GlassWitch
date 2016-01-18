@@ -78,8 +78,10 @@ namespace Glass_Witch
                 {
 
                 int klientid =
-                       int.Parse(cwd.download_data("Select KlientID from Klienci where Nazwa = '" + 
-                       txt_NazwaFirmy.Text + "'").Rows[0][0].ToString());
+                int.Parse(cwd.download_data("Select KlientID from Klienci where Nazwa = '" + 
+                txt_NazwaFirmy.Text + "'").Rows[0][0].ToString());
+
+
                 cwd.download_data("INSERT INTO Zamowienia VALUES ( " +
                 klientid + " , '" +
                 CurrentDate + "', '" +

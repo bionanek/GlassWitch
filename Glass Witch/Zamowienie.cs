@@ -41,5 +41,12 @@ namespace Glass_Witch
             this.Hide();
             start.Show();
         }
+
+        private void but_zatwierdź_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PodsumowanieZamowienia Podsumowanie = new PodsumowanieZamowienia();
+            Podsumowanie.Show();
+        }
     }
 }
