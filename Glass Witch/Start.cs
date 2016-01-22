@@ -13,7 +13,7 @@ namespace Glass_Witch
 {
     public partial class Start : Form
     {
-        //
+        
         public Start()
         {
             InitializeComponent();
@@ -29,22 +29,20 @@ namespace Glass_Witch
             ConnectWithDataBase baza = new ConnectWithDataBase();
             dataGridView1.DataSource = baza.download_data("Select * from Produkty");
             DataTable klientid =
-                      baza.download_data("Select KlientID from Klienci where Nazwa = 'Komozja'");
+            baza.download_data("Select KlientID from Klienci where Nazwa = 'Komozja'");
             textBox1.Text = (int.Parse(klientid.Rows[0][0].ToString()) + 1).ToString();
         }
+
         private void but_nowe_Click(object sender, EventArgs e)
         {
-
             wybor wybor = new wybor();
             wybor.Show();
-
         }
 
         private void but_wszystkie_Click(object sender, EventArgs e)
         {
             WszystkieZamowienia wz = new WszystkieZamowienia();
             wz.Show();
-
         }
 
         private void but_klienci_Click(object sender, EventArgs e)

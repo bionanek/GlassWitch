@@ -423,6 +423,8 @@
             this.Controls.Add(this.txt_MiastoZamowienia);
             this.Controls.Add(this.txt_KrajZamowienia);
             this.Controls.Add(this.txt_NazwaFirmy);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "WprowadzanieNowegoKlienta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WprowadzanieNowegoKlienta";

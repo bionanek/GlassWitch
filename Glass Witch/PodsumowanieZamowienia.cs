@@ -16,6 +16,7 @@ namespace Glass_Witch
     public partial class PodsumowanieZamowienia : Form
     {
         DataTable klient;
+        DataTable zamowienie;
         ConnectWithDataBase cwd = new ConnectWithDataBase();
 
         public PodsumowanieZamowienia(DataTable dane_klient)
@@ -30,16 +31,15 @@ namespace Glass_Witch
             //ZAPIS PDF W GlassWitch/bin/Debug !!!!!!!!!!!!!!!!!!!!!!!
 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
-            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Zamówienie.pdf", FileMode.Create));
+            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Zamówienie " + zamowienie.Rows[0]["DataPrzyjecia"].ToString() + " " + klient.Rows[0]["Nazwa"].ToString() + ".pdf", FileMode.Create));
             doc.Open();
 
-            Paragraph paragraph = new Paragraph("ORDER CONFIRMATION");
+            Paragraph paragraph = new Paragraph("                                                                   *ORDER CONFIRMATION*                  ");
             doc.Add(paragraph);
 
-            List list = new List(List.UNORDERED);
+            List list = new List(List.NUMERICAL);
 
-            list.Add(new ListItem(" "));
-            list.Add("Nazwa firmy: " + klient.Rows[0]["Nazwa"].ToString());
+            list.Add(new ListItem("Nazwa firmy: " + klient.Rows[0]["Nazwa"].ToString()));
             list.Add("Osoba Kontaktowa: " + klient.Rows[0]["OsobaKontaktowa"].ToString());
             list.Add("E-Mail: " + klient.Rows[0]["Email"].ToString());
             list.Add("Ulica: " + klient.Rows[0]["Ulica"].ToString());
