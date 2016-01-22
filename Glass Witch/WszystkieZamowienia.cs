@@ -21,9 +21,7 @@ namespace Glass_Witch
 
         private void WszystkieZamowienia_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Start start = new Start();
-            this.Hide();
-            start.Show();
+            this.Close();
         }
 
         private void WszystkieZamowienia_Load(object sender, EventArgs e)

@@ -37,7 +37,7 @@
             // 
             this.but_nowy_klient.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.but_nowy_klient.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_nowy_klient.Location = new System.Drawing.Point(12, 23);
+            this.but_nowy_klient.Location = new System.Drawing.Point(12, 12);
             this.but_nowy_klient.Name = "but_nowy_klient";
             this.but_nowy_klient.Size = new System.Drawing.Size(665, 97);
             this.but_nowy_klient.TabIndex = 0;
@@ -48,7 +48,7 @@
             // but_staly_klient
             // 
             this.but_staly_klient.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.but_staly_klient.Location = new System.Drawing.Point(12, 126);
+            this.but_staly_klient.Location = new System.Drawing.Point(12, 115);
             this.but_staly_klient.Name = "but_staly_klient";
             this.but_staly_klient.Size = new System.Drawing.Size(665, 97);
             this.but_staly_klient.TabIndex = 1;
@@ -59,7 +59,7 @@
             // but_powrot
             // 
             this.but_powrot.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.but_powrot.Location = new System.Drawing.Point(243, 229);
+            this.but_powrot.Location = new System.Drawing.Point(243, 218);
             this.but_powrot.Name = "but_powrot";
             this.but_powrot.Size = new System.Drawing.Size(189, 97);
             this.but_powrot.TabIndex = 2;
@@ -72,15 +72,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(690, 348);
+            this.ClientSize = new System.Drawing.Size(690, 328);
             this.Controls.Add(this.but_powrot);
             this.Controls.Add(this.but_staly_klient);
             this.Controls.Add(this.but_nowy_klient);
-            this.MaximumSize = new System.Drawing.Size(706, 387);
-            this.MinimumSize = new System.Drawing.Size(706, 387);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximumSize = new System.Drawing.Size(706, 367);
+            this.MinimumSize = new System.Drawing.Size(706, 367);
             this.Name = "wybor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "wybor";
+            this.Text = "Wybór rodzaju zamówienia";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.wybor_FormClosing);
             this.Load += new System.EventHandler(this.wybor_Load);
             this.ResumeLayout(false);

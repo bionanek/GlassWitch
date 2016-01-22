@@ -19,13 +19,6 @@ namespace Glass_Witch
             InitializeComponent();
         }
 
-        private void but_nowe_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            wybor wybor = new wybor();
-            wybor.Show();
-
-        }
         private void Start_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -39,12 +32,17 @@ namespace Glass_Witch
                       baza.download_data("Select KlientID from Klienci where Nazwa = 'Komozja'");
             textBox1.Text = (int.Parse(klientid.Rows[0][0].ToString()) + 1).ToString();
         }
+        private void but_nowe_Click(object sender, EventArgs e)
+        {
+
+            wybor wybor = new wybor();
+            wybor.Show();
+
+        }
 
         private void but_wszystkie_Click(object sender, EventArgs e)
         {
             WszystkieZamowienia wz = new WszystkieZamowienia();
-
-            this.Hide();
             wz.Show();
 
         }
@@ -52,7 +50,6 @@ namespace Glass_Witch
         private void but_klienci_Click(object sender, EventArgs e)
         {
             StaliKlienci sk = new StaliKlienci();
-            this.Hide();
             sk.Show();
         }
 

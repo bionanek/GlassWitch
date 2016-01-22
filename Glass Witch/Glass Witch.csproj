@@ -130,6 +130,12 @@
     <Compile Include="wybor.Designer.cs">
       <DependentUpon>wybor.cs</DependentUpon>
     </Compile>
+    <Compile Include="WyborProduktow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WyborProduktow.Designer.cs">
+      <DependentUpon>WyborProduktow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Zamowienie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="wybor.resx">
       <DependentUpon>wybor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WyborProduktow.resx">
+      <DependentUpon>WyborProduktow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zamowienie.resx">
       <DependentUpon>Zamowienie.cs</DependentUpon>

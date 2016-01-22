@@ -23,7 +23,7 @@ namespace Glass_Witch
 
         private void Zamowienie_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = cwd.download_data("select * from Produkty");
+            dgv1_produkty.DataSource = cwd.download_data("select * from Produkty");
             lab_nazwa.Text = klient.Rows[0]["Nazwa"].ToString();
             lab_ulica.Text = klient.Rows[0]["Ulica"].ToString();
             lab_KrajKod.Text = klient.Rows[0]["KodPocztowy"].ToString() + " " +
@@ -37,15 +37,13 @@ namespace Glass_Witch
 
         private void Zamowienie_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Start start = new Start();
-            this.Hide();
-            start.Show();
+
         }
 
         private void but_zatwierdź_Click(object sender, EventArgs e)
         {
             this.Hide();
-            PodsumowanieZamowienia Podsumowanie = new PodsumowanieZamowienia();
+            PodsumowanieZamowienia Podsumowanie = new PodsumowanieZamowienia(klient);
             Podsumowanie.Show();
         }
     }

@@ -26,9 +26,7 @@ namespace Glass_Witch
 
         private void but_powrot_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Start start = new Start();
-            start.Show();
+            this.Close();
         }
 
        
@@ -41,7 +39,7 @@ namespace Glass_Witch
 
         private void wybor_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+
         }
 
         private void but_staly_klient_Click(object sender, EventArgs e)
