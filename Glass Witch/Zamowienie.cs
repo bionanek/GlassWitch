@@ -48,7 +48,7 @@ namespace Glass_Witch
             int CurrentYear = CurrentDate.Year;
 
             this.Hide();
-            PodsumowanieZamowienia Podsumowanie = new PodsumowanieZamowienia(klient, CurrentYear);
+            PodsumowanieZamowienia Podsumowanie = new PodsumowanieZamowienia(klient, CurrentYear, dgv1_produkty);
             Podsumowanie.Show();
         }
     }

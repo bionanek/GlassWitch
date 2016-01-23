@@ -18,13 +18,15 @@ namespace Glass_Witch
         DataTable klient;
         DataTable zamowienie;
         private int CurrentYear;
+        private DataGridView data_produkty;
         ConnectWithDataBase cwd = new ConnectWithDataBase();
 
-        public PodsumowanieZamowienia(DataTable dane_klient, int year)
+        public PodsumowanieZamowienia(DataTable dane_klient, int year, DataGridView dgv1_produkty)
         {
             InitializeComponent();
             klient = dane_klient;
             CurrentYear = year;
+            data_produkty = dgv1_produkty;
         }
 
         private void but_doPDF_Click(object sender, EventArgs e)
@@ -51,6 +53,31 @@ namespace Glass_Witch
             list.Add("Numer VAT: " + klient.Rows[0]["VatNo"].ToString());
             doc.Add(list);
 
+            PdfPTable table = new PdfPTable(data_produkty.Columns.Count);
+
+            //Add the headers from data_produkty to the table
+            for (int j = 0; j < data_produkty.Columns.Count; j++)
+            {
+                table.AddCell(new Phrase(data_produkty.Columns[j].HeaderText));
+            }
+
+            //Flag the first row as a header
+            table.HeaderRows = 1;
+
+            //Add the actual rows from the data_produkty to the table
+            for (int i = 0; i < data_produkty.Columns.Count; i++)
+            {
+                for (int k = 0; k < data_produkty.Columns.Count; k++)
+                {
+                    if (data_produkty[k, i].Value != null)
+                    {
+                        table.AddCell(new Phrase(data_produkty[k, i].Value.ToString()));
+                    }
+                }
+            }
+
+
+            //Add out table
             doc.Close();
         }
     }
