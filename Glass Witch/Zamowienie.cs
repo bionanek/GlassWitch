@@ -15,10 +15,13 @@ namespace Glass_Witch
         DataTable klient;
         DateTime CurrentDate = DateTime.Today;
         ConnectWithDataBase cwd = new ConnectWithDataBase();
+
+        
         public Zamowienie(DataTable dane_klient)
         {
             InitializeComponent();
             klient = dane_klient;
+            
         }
 
         private void Zamowienie_Load(object sender, EventArgs e)
@@ -42,8 +45,10 @@ namespace Glass_Witch
 
         private void but_zatwierdź_Click(object sender, EventArgs e)
         {
+            int CurrentYear = CurrentDate.Year;
+
             this.Hide();
-            PodsumowanieZamowienia Podsumowanie = new PodsumowanieZamowienia(klient);
+            PodsumowanieZamowienia Podsumowanie = new PodsumowanieZamowienia(klient, CurrentYear);
             Podsumowanie.Show();
         }
     }

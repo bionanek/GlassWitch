@@ -17,12 +17,14 @@ namespace Glass_Witch
     {
         DataTable klient;
         DataTable zamowienie;
+        private int CurrentYear;
         ConnectWithDataBase cwd = new ConnectWithDataBase();
 
-        public PodsumowanieZamowienia(DataTable dane_klient)
+        public PodsumowanieZamowienia(DataTable dane_klient, int year)
         {
             InitializeComponent();
             klient = dane_klient;
+            CurrentYear = year;
         }
 
         private void but_doPDF_Click(object sender, EventArgs e)
@@ -31,7 +33,7 @@ namespace Glass_Witch
             //ZAPIS PDF W GlassWitch/bin/Debug !!!!!!!!!!!!!!!!!!!!!!!
 
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
-            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Zamówienie " + zamowienie.Rows[0]["DataPrzyjecia"].ToString() + " " + klient.Rows[0]["Nazwa"].ToString() + ".pdf", FileMode.Create));
+            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Zamówienie " + CurrentYear.ToString() + " " + klient.Rows[0]["Nazwa"].ToString() + ".pdf", FileMode.Create));
             doc.Open();
 
             Paragraph paragraph = new Paragraph("                                                                   *ORDER CONFIRMATION*                  ");
