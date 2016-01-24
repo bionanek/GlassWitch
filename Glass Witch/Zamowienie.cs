@@ -11,12 +11,11 @@ namespace Glass_Witch
 {
     public partial class Zamowienie : Form
     {
-        //
+
         DataTable klient;
         DateTime CurrentDate = DateTime.Today;
         ConnectWithDataBase cwd = new ConnectWithDataBase();
-
-        
+       
         public Zamowienie(DataTable dane_klient)
         {
             InitializeComponent();

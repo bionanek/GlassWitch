@@ -189,7 +189,7 @@ namespace Glass_Witch
 
         private void WyborProduktow_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Close();
+            
         }
     }
 }

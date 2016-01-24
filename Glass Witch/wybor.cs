@@ -12,7 +12,7 @@ namespace Glass_Witch
 {
     public partial class wybor : Form
     {
-        //
+        
         public wybor()
         {
             InitializeComponent();
@@ -32,7 +32,7 @@ namespace Glass_Witch
        
         private void but_nowy_klient_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             WprowadzanieNowegoKlienta wnk = new WprowadzanieNowegoKlienta();
             wnk.Show();
             this.Close();
@@ -45,7 +45,7 @@ namespace Glass_Witch
 
         private void but_staly_klient_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             DlaStalegoKlienta dsk = new DlaStalegoKlienta();
             dsk.Show();
         }

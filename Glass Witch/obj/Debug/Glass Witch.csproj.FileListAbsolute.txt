@@ -35,7 +35,6 @@ C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.exe
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.pdb
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\Glass Witch.exe
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\Glass Witch.pdb
-C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csprojResolveAssemblyReference.cache
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.DlaStalegoKlienta.resources
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.SkładanieZamówienia.resources
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.StaliKlienci.resources
@@ -69,9 +68,26 @@ C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\bin\Debug\itextsharp.pdfa.
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\bin\Debug\itextsharp.xtra.dll
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\bin\Debug\itextsharp.xml
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.WyborProduktow.resources
-C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\itextsharp.dll
-C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\itextsharp.pdfa.dll
-C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\itextsharp.xtra.dll
-C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\itextsharp.xml
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.WyborProduktow.resources
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Ilosc.resources
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Ilosc.resources
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\FlashControlV71.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\stdole.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csprojResolveAssemblyReference.cache
