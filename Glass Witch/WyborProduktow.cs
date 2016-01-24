@@ -11,6 +11,8 @@ namespace Glass_Witch
 {
     public partial class WyborProduktow : Form
     {
+        string wybranaWaluta = "";
+        public int liczba_ozdob = 0;
         ConnectWithDataBase cwd = new ConnectWithDataBase();
         DataTable _produkty;
         DataTable _daneProduktu;
@@ -19,6 +21,7 @@ namespace Glass_Witch
 
 
         int index;
+
         public WyborProduktow()
         {
             InitializeComponent();
@@ -27,17 +30,8 @@ namespace Glass_Witch
         private void WyborProduktow_Load(object sender, EventArgs e)
         {
             
-
-            _produkty = cwd.download_data("select * from Produkty");
-            dgv1_produkty.DataSource = _produkty;
-            dgv1_wybraneProdukty.Columns.Add("ProduktID", "ID");
-            dgv1_wybraneProdukty.Columns.Add("Nazwa", "Nazwa");
-            dgv1_wybraneProdukty.Columns.Add("Rok", "Rok");
-            dgv1_wybraneProdukty.Columns.Add("Pakowanie", "Pakowanie");
-            dgv1_wybraneProdukty.Columns.Add("Ilość Magazyn", "IloscMagazyn");
-            dgv1_wybraneProdukty.Columns.Add("CenaEUR", "Euro");
-            dgv1_wybraneProdukty.Columns.Add("CenaDOL", "Dolary");
-            dgv1_wybraneProdukty.Columns.Add("CenaPln", "Pln");
+            dgv1_produkty.ReadOnly = true;
+            
         }
 
         private void txt_szukaj_TextChanged(object sender, EventArgs e)
@@ -84,29 +78,47 @@ namespace Glass_Witch
         private void but_dodaj_Click(object sender, EventArgs e)
         {
             _daneProduktu = _produkty.Clone();
-            //if (_daneProduktu == null)
-            //{
-            //    _daneProduktu = cwd.download_data("select * from Produkty where Nazwa = '" +
-            //                                      dgv1_produkty.Rows[index].Cells[1].Value.ToString() + "'");
-            //}
-            //else
-            //{
-            //    _daneProduktu.ImportRow(wybranyWiersz.Rows[0]);
 
-            //}
-            //wybranyWiersz.Clear();
+            DataGridViewRow clonedRow = (DataGridViewRow) dgv1_produkty.Rows[index].Clone();
+            for (int ind = 0; ind < dgv1_produkty.Rows[index].Cells.Count; ind++)
+            {
+                clonedRow.Cells[ind].Value = dgv1_produkty.Rows[index].Cells[ind].Value;
+            }
 
-            _daneProduktu.ImportRow(_produkty.Rows[0]);
-            _daneProduktu.ImportRow(_produkty.Rows[1]);
+            dgv1_wybraneProdukty.Rows.Add(clonedRow);
 
-            dgv1_wybraneProdukty.DataSource = _daneProduktu;
+            Ilosc ilosc = new Ilosc(this);
+            ilosc.ShowDialog();
 
-            //foreach (DataGridViewRow row in dgv1_produkty.SelectedRows)
-            //{
-            //    dgv1_wybraneProdukty.Rows.Add(row);
 
-            //}
+            dgv1_wybraneProdukty.Rows[dgv1_wybraneProdukty.RowCount - 1].
+                Cells[dgv1_wybraneProdukty.Columns["ilosc"].Index].Value = liczba_ozdob;
 
+            double cenaOzdoby = double.Parse(dgv1_wybraneProdukty.Rows[dgv1_wybraneProdukty.RowCount - 1].
+                Cells[dgv1_wybraneProdukty.Columns["waluta"].Index].Value.ToString());
+
+            switch (cmb_waluta.SelectedIndex)
+            {
+                case 0:
+                {
+                    dgv1_wybraneProdukty.Rows[dgv1_wybraneProdukty.RowCount - 1].
+                        Cells[dgv1_wybraneProdukty.Columns["suma"].Index].Value = (cenaOzdoby * liczba_ozdob) + " €";
+                    break;
+                }
+                case 1:
+                {
+                    dgv1_wybraneProdukty.Rows[dgv1_wybraneProdukty.RowCount - 1].
+                        Cells[dgv1_wybraneProdukty.Columns["suma"].Index].Value = (cenaOzdoby * liczba_ozdob) + " $";
+                    break;
+                }
+                case 2:
+                {
+                        dgv1_wybraneProdukty.Rows[dgv1_wybraneProdukty.RowCount - 1].
+                            Cells[dgv1_wybraneProdukty.Columns["suma"].Index].Value = (cenaOzdoby * liczba_ozdob) + " PLN";
+                    break;
+                }
+
+            }
         }
 
         private void dgv1_produkty_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -115,6 +127,69 @@ namespace Glass_Witch
             index = e.RowIndex;
             wybranyWiersz= cwd.download_data("select * from Produkty where Nazwa = '" +
                                               dgv1_produkty.Rows[index].Cells[1].Value.ToString() + "'");
+            but_dodaj.Enabled = true;
+        }
+
+        private void cmb_waluta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+           
+            switch (cmb_waluta.SelectedIndex)
+            {
+                case 0:
+                {
+                    _produkty = 
+                            cwd.download_data("select ProduktID, Nazwa, Rok, Pakowanie, IloscMagazyn, CenaEUR from Produkty");
+                    wybranaWaluta = "Euro";
+
+                    break;
+                }
+                case 1:
+                {
+                    _produkty =
+                        cwd.download_data("select ProduktID, Nazwa, Rok, Pakowanie, IloscMagazyn, CenaDOL from Produkty");
+                    wybranaWaluta = "Dolar";
+                    break;
+                }
+                case 2:
+                {
+                    _produkty =
+                        cwd.download_data("select ProduktID, Nazwa, Rok, Pakowanie, IloscMagazyn, CenaPln from Produkty");
+                    wybranaWaluta = "PLN";
+                    break;
+                }
+
+            }
+            dgv1_wybraneProdukty.Columns.Clear();
+            dgv1_wybraneProdukty.Columns.Add("produktid", "ID");
+            dgv1_wybraneProdukty.Columns.Add("nazwa", "Nazwa");
+            dgv1_wybraneProdukty.Columns.Add("rok", "Rok");
+            dgv1_wybraneProdukty.Columns.Add("pakowanie", "Pakowanie");
+            dgv1_wybraneProdukty.Columns.Add("magazyn", "Magazyn");
+            dgv1_wybraneProdukty.Columns.Add("waluta", wybranaWaluta);
+            dgv1_wybraneProdukty.Columns.Add("suma", "Suma");
+            dgv1_wybraneProdukty.Columns.Add("ilosc", "Ilość");
+            foreach (DataGridViewColumn col in dgv1_wybraneProdukty.Columns)
+            {
+                col.ReadOnly = true;
+            }
+            dgv1_wybraneProdukty.Columns["suma"].ReadOnly = false;
+
+            dgv1_produkty.DataSource = _produkty;
+        }
+
+        private void but_doKlienta_Click(object sender, EventArgs e)
+        {
+            wybor wybor = new wybor();
+            this.Hide();
+            wybor.Show();
+            this.Close();
+            
+        }
+
+        private void WyborProduktow_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Close();
         }
     }
 }

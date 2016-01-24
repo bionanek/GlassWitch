@@ -85,6 +85,12 @@
     <Compile Include="DlaStalegoKlienta.Designer.cs">
       <DependentUpon>DlaStalegoKlienta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ilosc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ilosc.Designer.cs">
+      <DependentUpon>Ilosc.cs</DependentUpon>
+    </Compile>
     <Compile Include="PodsumowanieZamowienia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </Compile>
     <EmbeddedResource Include="DlaStalegoKlienta.resx">
       <DependentUpon>DlaStalegoKlienta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ilosc.resx">
+      <DependentUpon>Ilosc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PodsumowanieZamowienia.resx">
       <DependentUpon>PodsumowanieZamowienia.cs</DependentUpon>

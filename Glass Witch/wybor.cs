@@ -35,6 +35,7 @@ namespace Glass_Witch
             this.Hide();
             WprowadzanieNowegoKlienta wnk = new WprowadzanieNowegoKlienta();
             wnk.Show();
+            this.Close();
         }
 
         private void wybor_FormClosing(object sender, FormClosingEventArgs e)

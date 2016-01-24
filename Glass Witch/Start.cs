@@ -21,6 +21,7 @@ namespace Glass_Witch
 
         private void Start_FormClosing(object sender, FormClosingEventArgs e)
         {
+
             Application.Exit();
         }
 
@@ -35,8 +36,8 @@ namespace Glass_Witch
 
         private void but_nowe_Click(object sender, EventArgs e)
         {
-            wybor wybor = new wybor();
-            wybor.Show();
+            WyborProduktow wp = new WyborProduktow();
+            wp.Show();
         }
 
         private void but_wszystkie_Click(object sender, EventArgs e)

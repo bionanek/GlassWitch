@@ -65,13 +65,13 @@ namespace Glass_Witch
             table.HeaderRows = 1;
 
             //Add the actual rows from the data_produkty to the table
-            for (int i = 0; i < data_produkty.Columns.Count; i++)
+            for (int i = 0; i < data_produkty.Columns.Count - 1; i++)
             {
-                for (int k = 0; k < data_produkty.Columns.Count; k++)
+                for (int k = 0; k < data_produkty.Rows.Count - 1; k++)
                 {
-                    if (data_produkty[k, i].Value != null)
+                    if (data_produkty[i, k].Value != null)
                     {
-                        table.AddCell(new Phrase(data_produkty[k, i].Value.ToString()));
+                        table.AddCell(new Phrase(data_produkty[i, k].Value.ToString()));
                     }
                 }
             }

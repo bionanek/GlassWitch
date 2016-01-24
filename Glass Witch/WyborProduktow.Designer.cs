@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dgv1_wybraneProdukty = new System.Windows.Forms.DataGridView();
             this.but_dodaj = new System.Windows.Forms.Button();
+            this.but_doKlienta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1_produkty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1_wybraneProdukty)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +46,7 @@
             this.dgv1_produkty.AllowUserToDeleteRows = false;
             this.dgv1_produkty.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dgv1_produkty.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgv1_produkty.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv1_produkty.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv1_produkty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv1_produkty.Location = new System.Drawing.Point(12, 197);
@@ -68,11 +69,16 @@
             // 
             // cmb_waluta
             // 
-            this.cmb_waluta.FormattingEnabled = true;
+            this.cmb_waluta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_waluta.Items.AddRange(new object[] {
+            "Euro €",
+            "Dollar $",
+            "Złoty -,"});
             this.cmb_waluta.Location = new System.Drawing.Point(480, 55);
             this.cmb_waluta.Name = "cmb_waluta";
             this.cmb_waluta.Size = new System.Drawing.Size(141, 21);
             this.cmb_waluta.TabIndex = 2;
+            this.cmb_waluta.SelectedIndexChanged += new System.EventHandler(this.cmb_waluta_SelectedIndexChanged);
             // 
             // lab_waluta
             // 
@@ -88,7 +94,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(197, 123);
+            this.label2.Location = new System.Drawing.Point(194, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 16);
             this.label2.TabIndex = 4;
@@ -111,6 +117,7 @@
             // 
             // but_dodaj
             // 
+            this.but_dodaj.Enabled = false;
             this.but_dodaj.Location = new System.Drawing.Point(401, 154);
             this.but_dodaj.Name = "but_dodaj";
             this.but_dodaj.Size = new System.Drawing.Size(100, 23);
@@ -119,6 +126,16 @@
             this.but_dodaj.UseVisualStyleBackColor = true;
             this.but_dodaj.Click += new System.EventHandler(this.but_dodaj_Click);
             // 
+            // but_doKlienta
+            // 
+            this.but_doKlienta.Location = new System.Drawing.Point(973, 22);
+            this.but_doKlienta.Name = "but_doKlienta";
+            this.but_doKlienta.Size = new System.Drawing.Size(161, 54);
+            this.but_doKlienta.TabIndex = 7;
+            this.but_doKlienta.Text = "Dalej";
+            this.but_doKlienta.UseVisualStyleBackColor = true;
+            this.but_doKlienta.Click += new System.EventHandler(this.but_doKlienta_Click);
+            // 
             // WyborProduktow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,6 +143,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1146, 522);
+            this.Controls.Add(this.but_doKlienta);
             this.Controls.Add(this.but_dodaj);
             this.Controls.Add(this.dgv1_wybraneProdukty);
             this.Controls.Add(this.label2);
@@ -136,6 +154,7 @@
             this.Name = "WyborProduktow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WyborProduktow";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.WyborProduktow_FormClosing);
             this.Load += new System.EventHandler(this.WyborProduktow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1_produkty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1_wybraneProdukty)).EndInit();
@@ -153,5 +172,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgv1_wybraneProdukty;
         private System.Windows.Forms.Button but_dodaj;
+        private System.Windows.Forms.Button but_doKlienta;
     }
 }

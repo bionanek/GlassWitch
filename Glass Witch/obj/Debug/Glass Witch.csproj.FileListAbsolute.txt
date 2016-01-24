@@ -74,3 +74,4 @@ C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\itextsharp.pdfa
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\itextsharp.xtra.dll
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\itextsharp.xml
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.WyborProduktow.resources
+C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Ilosc.resources
