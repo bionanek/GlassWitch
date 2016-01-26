@@ -2,6 +2,8 @@
 using System.Data;
 using System.Windows.Forms;
 using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
+using System.Data.SqlClient;
 
 namespace Glass_Witch
 {
@@ -29,9 +31,29 @@ namespace Glass_Witch
         private void but_generowanie_Click(object sender, EventArgs e)
         {
             ReportDocument cryRpt = new ReportDocument();
+            TableLogOnInfos crtableLogoninfos = new TableLogOnInfos();
+            TableLogOnInfo crtableLogoninfo = new TableLogOnInfo();
+            ConnectionInfo crConnectionInfo = new ConnectionInfo();
+            Tables CrTables;
+
             cryRpt.Load("C:/Users/oskar/Documents/GitHub/GlassWitch/Glass Witch/CrystalReport1.rpt");
+
+
+            crConnectionInfo.ServerName = "ELVISZ/SQLEXPRESS";
+            crConnectionInfo.DatabaseName = "GlassWitch";
+            crConnectionInfo.UserID = "sa";
+            crConnectionInfo.Password = "jakubelvisz";
+
+            CrTables = cryRpt.Database.Tables;
+            foreach (CrystalDecisions.CrystalReports.Engine.Table CrTable in CrTables)
+            {
+                crtableLogoninfo = CrTable.LogOnInfo;
+                crtableLogoninfo.ConnectionInfo = crConnectionInfo;
+                CrTable.ApplyLogOnInfo(crtableLogoninfo);
+            }
+
             crystalReportViewer1.ReportSource = cryRpt;
-            crystalReportViewer1.Refresh();
+            crystalReportViewer1.Refresh();          
         }
     }
 }
