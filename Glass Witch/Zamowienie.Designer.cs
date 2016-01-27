@@ -45,7 +45,7 @@
             // 
             this.lab_ulica.AutoSize = true;
             this.lab_ulica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_ulica.Location = new System.Drawing.Point(28, 131);
+            this.lab_ulica.Location = new System.Drawing.Point(28, 182);
             this.lab_ulica.Name = "lab_ulica";
             this.lab_ulica.Size = new System.Drawing.Size(44, 20);
             this.lab_ulica.TabIndex = 0;
@@ -68,7 +68,7 @@
             // 
             this.lab_nazwa.AutoSize = true;
             this.lab_nazwa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_nazwa.Location = new System.Drawing.Point(28, 104);
+            this.lab_nazwa.Location = new System.Drawing.Point(28, 90);
             this.lab_nazwa.Name = "lab_nazwa";
             this.lab_nazwa.Size = new System.Drawing.Size(62, 20);
             this.lab_nazwa.TabIndex = 2;
@@ -78,7 +78,7 @@
             // 
             this.lab_KrajKod.AutoSize = true;
             this.lab_KrajKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_KrajKod.Location = new System.Drawing.Point(27, 151);
+            this.lab_KrajKod.Location = new System.Drawing.Point(27, 217);
             this.lab_KrajKod.Name = "lab_KrajKod";
             this.lab_KrajKod.Size = new System.Drawing.Size(140, 20);
             this.lab_KrajKod.TabIndex = 3;
@@ -88,7 +88,7 @@
             // 
             this.lab_vat.AutoSize = true;
             this.lab_vat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_vat.Location = new System.Drawing.Point(28, 171);
+            this.lab_vat.Location = new System.Drawing.Point(27, 251);
             this.lab_vat.Name = "lab_vat";
             this.lab_vat.Size = new System.Drawing.Size(85, 20);
             this.lab_vat.TabIndex = 4;
@@ -98,7 +98,7 @@
             // 
             this.lab_data.AutoSize = true;
             this.lab_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_data.Location = new System.Drawing.Point(839, 151);
+            this.lab_data.Location = new System.Drawing.Point(466, 37);
             this.lab_data.Name = "lab_data";
             this.lab_data.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lab_data.Size = new System.Drawing.Size(44, 20);
@@ -110,7 +110,7 @@
             // 
             this.lab_mail.AutoSize = true;
             this.lab_mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_mail.Location = new System.Drawing.Point(197, 131);
+            this.lab_mail.Location = new System.Drawing.Point(27, 151);
             this.lab_mail.Name = "lab_mail";
             this.lab_mail.Size = new System.Drawing.Size(53, 20);
             this.lab_mail.TabIndex = 6;
@@ -120,7 +120,7 @@
             // 
             this.lab_osobaKontaktowa.AutoSize = true;
             this.lab_osobaKontaktowa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_osobaKontaktowa.Location = new System.Drawing.Point(197, 104);
+            this.lab_osobaKontaktowa.Location = new System.Drawing.Point(28, 122);
             this.lab_osobaKontaktowa.Name = "lab_osobaKontaktowa";
             this.lab_osobaKontaktowa.Size = new System.Drawing.Size(160, 20);
             this.lab_osobaKontaktowa.TabIndex = 7;

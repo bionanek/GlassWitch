@@ -15,7 +15,8 @@ namespace Glass_Witch
         DataTable klient;
         DateTime CurrentDate = DateTime.Today;
         ConnectWithDataBase cwd = new ConnectWithDataBase();
-       
+        DataGridView dgv1_wybraneProdukty;
+
         public Zamowienie(DataTable dane_klient)
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace Glass_Witch
 
         private void Zamowienie_Load(object sender, EventArgs e)
         {
-            dgv1_produkty.DataSource = cwd.download_data("select * from Produkty");
+            dgv1_wybraneProdukty.DataSource = cwd.download_data("select * from Produkty");
             lab_nazwa.Text = klient.Rows[0]["Nazwa"].ToString();
             lab_ulica.Text = klient.Rows[0]["Ulica"].ToString();
             lab_KrajKod.Text = klient.Rows[0]["KodPocztowy"].ToString() + " " +
@@ -47,8 +48,12 @@ namespace Glass_Witch
             int CurrentYear = CurrentDate.Year;
 
             this.Hide();
-            PodsumowanieZamowienia Podsumowanie = new PodsumowanieZamowienia(klient, CurrentYear, dgv1_produkty);
+            PodsumowanieZamowienia Podsumowanie = new PodsumowanieZamowienia(klient, CurrentYear, dgv1_wybraneProdukty);
             Podsumowanie.Show();
+
+            this.Hide();
+            PodsumowanieZamówienia1 Podsumowanie1 = new PodsumowanieZamówienia1(klient, CurrentYear, dgv1_wybraneProdukty);
+            Podsumowanie1.Show();
         }
     }
 }

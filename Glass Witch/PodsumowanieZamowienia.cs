@@ -12,7 +12,7 @@ namespace Glass_Witch
         DataTable klient;
         DataTable zamowienie;
         private int CurrentYear;
-        private DataGridView data_produkty;
+        DataGridView data_produkty;
         ConnectWithDataBase cwd = new ConnectWithDataBase();
 
         private void PodsumowanieZamowienia_Load(object sender, EventArgs e)
@@ -37,7 +37,6 @@ namespace Glass_Witch
             Tables CrTables;
 
             cryRpt.Load("C:/Users/oskar/Documents/GitHub/GlassWitch/Glass Witch/CrystalReport1.rpt");
-
 
             crConnectionInfo.ServerName = "ELVISZ/SQLEXPRESS";
             crConnectionInfo.DatabaseName = "GlassWitch";
