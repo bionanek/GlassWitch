@@ -51,7 +51,7 @@ namespace Glass_Witch
             list.Add(klient.Rows[0]["Kraj"].ToString());
             list.Add(klient.Rows[0]["VatNo"].ToString());
             list.Add("");
-            list.Add("    Produkty |   ")
+            list.Add("    Produkty |   ");
             doc.Add(list);
 
             PdfPTable table = new PdfPTable(data_produkty.Columns.Count);

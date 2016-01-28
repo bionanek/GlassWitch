@@ -26,7 +26,7 @@ namespace Glass_Witch
 
         private void Zamowienie_Load(object sender, EventArgs e)
         {
-            dgv1_wybraneProdukty.DataSource = cwd.download_data("select * from Produkty");
+            dgv1_produkty.DataSource = cwd.download_data("select * from Produkty");
             lab_nazwa.Text = klient.Rows[0]["Nazwa"].ToString();
             lab_ulica.Text = klient.Rows[0]["Ulica"].ToString();
             lab_KrajKod.Text = klient.Rows[0]["KodPocztowy"].ToString() + " " +
