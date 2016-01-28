@@ -37,21 +37,23 @@ namespace Glass_Witch
             PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Zamówienie " + CurrentYear.ToString() + " " + klient.Rows[0]["Nazwa"].ToString() + ".pdf", FileMode.Create));
             doc.Open();
 
-            Paragraph paragraph = new Paragraph("                                                                   *ORDER CONFIRMATION*                  ");
+            Paragraph paragraph = new Paragraph("                                                                   *ORDER CONFIRMATION*       GlassWitch S.C.           ");
             doc.Add(paragraph);
 
-            List list = new List();
+            List list = new List(List.UPPERCASE);
 
-            list.Add(new ListItem(klient.Rows[0]["Nazwa"].ToString()));
-            list.Add(klient.Rows[0]["OsobaKontaktowa"].ToString());
-            list.Add(klient.Rows[0]["Email"].ToString());
-            list.Add(klient.Rows[0]["Ulica"].ToString());
-            list.Add(klient.Rows[0]["KodPocztowy"].ToString());
-            list.Add(klient.Rows[0]["Miasto"].ToString());
-            list.Add(klient.Rows[0]["Kraj"].ToString());
-            list.Add(klient.Rows[0]["VatNo"].ToString());
+            list.Add(new ListItem(" "));
             list.Add(" ");
-            list.Add("    Produkty |   ");
+            list.Add(klient.Rows[0]["Nazwa"].ToString());
+            list.Add(klient.Rows[0]["OsobaKontaktowa"].ToString()); 
+            list.Add(klient.Rows[0]["Email"].ToString()); 
+            list.Add(klient.Rows[0]["Ulica"].ToString()); 
+            list.Add(klient.Rows[0]["KodPocztowy"].ToString());
+            list.Add(klient.Rows[0]["Miasto"].ToString()            );
+            list.Add(klient.Rows[0]["Kraj"].ToString()              );
+            list.Add(klient.Rows[0]["VatNo"].ToString()             );
+            list.Add(" ");
+            list.Add("                         Produkty             |             Ilosc               |   Cena za sztuke       |    Cena TOTAL     ");
             list.Add(" ");
             doc.Add(list);
 
@@ -70,33 +72,33 @@ namespace Glass_Witch
                 }
             }
             doc.Add(pdfTable);
-            
-            //Add the headers from data_produkty to the table
-            for (int j = 0; j < data_produkty.Columns.Count; j++)
-            {
-                if (data_produkty.Columns[j].Name == " ")
-                {
-                    continue;
-                }
-                table.AddCell(new Phrase(data_produkty.Columns[j].HeaderText));
 
-            }
+            /*       //Add the headers from data_produkty to the table
+                   for (int j = 0; j < data_produkty.Columns.Count; j++)
+                   {
+                       if (data_produkty.Columns[j].Name == " ")
+                       {
+                           continue;
+                       }
+                       table.AddCell(new Phrase(data_produkty.Columns[j].HeaderText));
 
-            //Flag the first row as a header
-            table.HeaderRows = 1;
+                   }
 
-            //Add the actual rows from the data_produkty to the table
-            for (int i = 0; i < data_produkty.Columns.Count - 1; i++)
-            {
-                for (int k = 0; k < data_produkty.Rows.Count - 1; k++)
-                {
-                    if (data_produkty[i, k].Value != null)
-                    {
-                        table.AddCell(new Phrase(data_produkty[i, k].Value.ToString()));
-                    }
-                }
-            } 
-            
+                   //Flag the first row as a header
+                   table.HeaderRows = 1;
+
+                   //Add the actual rows from the data_produkty to the table
+                   for (int i = 0; i < data_produkty.Columns.Count - 1; i++)
+                   {
+                       for (int k = 0; k < data_produkty.Rows.Count - 1; k++)
+                       {
+                           if (data_produkty[i, k].Value != null)
+                           {
+                               table.AddCell(new Phrase(data_produkty[i, k].Value.ToString()));
+                           }
+                       }
+                   }               */
+
 
             //Add out table
             doc.Close();
