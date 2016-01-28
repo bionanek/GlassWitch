@@ -38,7 +38,7 @@
             this.txt_ilosc.Location = new System.Drawing.Point(40, 24);
             this.txt_ilosc.Name = "txt_ilosc";
             this.txt_ilosc.Size = new System.Drawing.Size(79, 20);
-            this.txt_ilosc.TabIndex = 0;
+            this.txt_ilosc.TabIndex = 1;
             this.txt_ilosc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lab_ilosc

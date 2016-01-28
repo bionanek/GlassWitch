@@ -214,7 +214,7 @@
             this.button_DoZamowienia.Location = new System.Drawing.Point(455, 290);
             this.button_DoZamowienia.Name = "button_DoZamowienia";
             this.button_DoZamowienia.Size = new System.Drawing.Size(267, 66);
-            this.button_DoZamowienia.TabIndex = 15;
+            this.button_DoZamowienia.TabIndex = 50;
             this.button_DoZamowienia.Text = "SKŁADANIE ZAMÓWIENIA";
             this.button_DoZamowienia.UseVisualStyleBackColor = true;
             this.button_DoZamowienia.Click += new System.EventHandler(this.button_DoZamowienia_Click);
