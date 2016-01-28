@@ -27,6 +27,8 @@ namespace Glass_Witch
         private void but_powrot_Click(object sender, EventArgs e)
         {
             this.Close();
+            Start start = new Start();
+            start.Show();
         }
 
        

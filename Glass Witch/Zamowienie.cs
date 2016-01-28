@@ -28,6 +28,10 @@ namespace Glass_Witch
             _wybraneProdukty = wybraneProdukty;
         }
 
+        public Zamowienie()
+        {
+        }
+
         private void Zamowienie_Load(object sender, EventArgs e)
         {
             WyborProduktow wp = new WyborProduktow();

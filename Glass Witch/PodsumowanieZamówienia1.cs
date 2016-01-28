@@ -33,17 +33,23 @@ namespace Glass_Witch
         {
             //ZAPIS PDF W GlassWitch/bin/Debug !!!!!!!!!!!!!!!!!!!!!!!
 
+            
+
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
             PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Zamówienie " + CurrentYear.ToString() + " " + klient.Rows[0]["Nazwa"].ToString() + ".pdf", FileMode.Create));
             doc.Open();
 
-            Paragraph paragraph = new Paragraph("                                                                   *ORDER CONFIRMATION*       GlassWitch S.C.           ");
+            Paragraph paragraph = new Paragraph("Glass Witch S.C.                                   *ORDER CONFIRMATION* ");
             doc.Add(paragraph);
 
             List list = new List(List.UPPERCASE);
 
-            list.Add(new ListItem(" "));
+            list.Add(new ListItem("Sportowa 99"));
+            list.Add("42-200 Częstochowa, POLAND");
+            list.Add("biuro@glasswitch.pl");
+            list.Add("Phone: (+48) 512 79 97 48");
             list.Add(" ");
+            list.Add("INFORMACJE O ZAMÓWIENIU: ");
             list.Add(klient.Rows[0]["Nazwa"].ToString());
             list.Add(klient.Rows[0]["OsobaKontaktowa"].ToString()); 
             list.Add(klient.Rows[0]["Email"].ToString()); 
@@ -53,7 +59,7 @@ namespace Glass_Witch
             list.Add(klient.Rows[0]["Kraj"].ToString()              );
             list.Add(klient.Rows[0]["VatNo"].ToString()             );
             list.Add(" ");
-            list.Add("                         Produkty             |             Ilosc               |   Cena za sztuke       |    Cena TOTAL     ");
+            list.Add("                         Produkty            |             Ilosc               |   Cena za sztuke      |    Cena TOTAL     ");
             list.Add(" ");
             doc.Add(list);
 
@@ -73,7 +79,7 @@ namespace Glass_Witch
             }
             doc.Add(pdfTable);
 
-            /*       //Add the headers from data_produkty to the table
+                   //Add the headers from data_produkty to the table
                    for (int j = 0; j < data_produkty.Columns.Count; j++)
                    {
                        if (data_produkty.Columns[j].Name == " ")
@@ -97,11 +103,18 @@ namespace Glass_Witch
                                table.AddCell(new Phrase(data_produkty[i, k].Value.ToString()));
                            }
                        }
-                   }               */
+                   }               
 
 
             //Add out table
             doc.Close();
+        }
+
+        private void PodsumowanieZamówienia1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            Start start = new Start();
+            start.Show();
         }
     }
 }

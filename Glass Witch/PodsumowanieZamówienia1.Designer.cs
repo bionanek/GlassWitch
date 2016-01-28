@@ -51,6 +51,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "PodsumowanieZamówienia1";
             this.Text = "PDF";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PodsumowanieZamówienia1_FormClosing);
             this.ResumeLayout(false);
 
         }
