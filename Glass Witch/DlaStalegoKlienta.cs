@@ -46,7 +46,6 @@ namespace Glass_Witch
             dgv1_zamStaliKlienci.DataSource = wszyscyKlienci;
             dgv1_zamStaliKlienci.Rows[0].Selected = false;
 
-            ToolTip1.SetToolTip(this.but_szukajKlienta, DownloadCustomerDataToString());
         }
         public string DownloadCustomerDataToString()
         {

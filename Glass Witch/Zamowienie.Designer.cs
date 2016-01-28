@@ -98,7 +98,7 @@
             // 
             this.lab_data.AutoSize = true;
             this.lab_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_data.Location = new System.Drawing.Point(466, 37);
+            this.lab_data.Location = new System.Drawing.Point(819, 251);
             this.lab_data.Name = "lab_data";
             this.lab_data.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lab_data.Size = new System.Drawing.Size(44, 20);

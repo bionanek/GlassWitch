@@ -33,6 +33,26 @@ namespace Glass_Witch
             WyborProduktow wp = new WyborProduktow();
             
             dgv1_wybraneProdukty.DataSource = _wybraneProdukty;
+
+            // USUNIĘCIE NIEPOTRZEBNYCH KOLUMN
+            dgv1_wybraneProdukty.Columns.Remove("Nazwa");
+            dgv1_wybraneProdukty.Columns.Remove("Rok");
+            dgv1_wybraneProdukty.Columns.Remove("Magazyn");
+            dgv1_wybraneProdukty.Columns.Remove("Pakowanie");
+
+            // USTAWIENIE KOLEJNOŚCI KOLUMN
+            dgv1_wybraneProdukty.Columns[0].DisplayIndex = 0;
+            dgv1_wybraneProdukty.Columns[1].DisplayIndex = 1;
+            dgv1_wybraneProdukty.Columns[2].DisplayIndex = 3;
+            dgv1_wybraneProdukty.Columns[3].DisplayIndex = 2;
+
+            // ZMIANA NAGŁÓWKÓW NA ANGIELSKIE
+            dgv1_wybraneProdukty.Columns[0].HeaderText = "Product ID";
+            dgv1_wybraneProdukty.Columns[1].HeaderText = "Price";
+            dgv1_wybraneProdukty.Columns[2].HeaderText = "Total price";
+            dgv1_wybraneProdukty.Columns[3].HeaderText = "Quantity";
+
+            // PRZYPISANIE DANYCH KLIENTA DO LABELI
             lab_nazwa.Text = klient.Rows[0]["Nazwa"].ToString();
             lab_ulica.Text = klient.Rows[0]["Ulica"].ToString();
             lab_KrajKod.Text = klient.Rows[0]["KodPocztowy"].ToString() + " " +

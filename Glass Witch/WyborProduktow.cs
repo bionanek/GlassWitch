@@ -55,7 +55,7 @@ namespace Glass_Witch
                 for (int i = 0; i < _produkty.Rows.Count; i++)
                 {
                     znalezione = false;
-                    for (int j = 0; j < _produkty.Columns.Count; j++)
+                    for (int j = 0; j < 2; j++)
                     {
                         zawartoscKomorki = _produkty.Rows[i][j].ToString().ToLower();
                         if (zawartoscKomorki.IndexOf(txt_szukaj.Text.ToLower()) >= 0)
