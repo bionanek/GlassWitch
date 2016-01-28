@@ -144,7 +144,7 @@
             this.but_zatwierdź.Name = "but_zatwierdź";
             this.but_zatwierdź.Size = new System.Drawing.Size(216, 81);
             this.but_zatwierdź.TabIndex = 9;
-            this.but_zatwierdź.Text = "Zatwierdź i generuj do PDF";
+            this.but_zatwierdź.Text = "Zatwierdź";
             this.but_zatwierdź.UseVisualStyleBackColor = true;
             this.but_zatwierdź.Click += new System.EventHandler(this.but_zatwierdź_Click);
             // 

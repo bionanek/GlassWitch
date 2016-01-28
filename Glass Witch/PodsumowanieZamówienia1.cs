@@ -40,7 +40,7 @@ namespace Glass_Witch
             Paragraph paragraph = new Paragraph("                                                                   *ORDER CONFIRMATION*                  ");
             doc.Add(paragraph);
 
-            List list = new List(List.NUMERICAL);
+            List list = new List();
 
             list.Add(new ListItem(klient.Rows[0]["Nazwa"].ToString()));
             list.Add(klient.Rows[0]["OsobaKontaktowa"].ToString());
@@ -50,13 +50,14 @@ namespace Glass_Witch
             list.Add(klient.Rows[0]["Miasto"].ToString());
             list.Add(klient.Rows[0]["Kraj"].ToString());
             list.Add(klient.Rows[0]["VatNo"].ToString());
-            list.Add("");
+            list.Add(" ");
             list.Add("    Produkty |   ");
+            list.Add(" ");
             doc.Add(list);
 
             PdfPTable table = new PdfPTable(data_produkty.Columns.Count);
 
-            PdfPTable pdfTable = new PdfPTable(8);
+            PdfPTable pdfTable = new PdfPTable(4);
             foreach (DataGridViewRow row in data_produkty.Rows)
             {
                 foreach (DataGridViewCell celli in row.Cells)
@@ -73,7 +74,7 @@ namespace Glass_Witch
             //Add the headers from data_produkty to the table
             for (int j = 0; j < data_produkty.Columns.Count; j++)
             {
-                if (data_produkty.Columns[j].Name == "SRANIE")
+                if (data_produkty.Columns[j].Name == " ")
                 {
                     continue;
                 }

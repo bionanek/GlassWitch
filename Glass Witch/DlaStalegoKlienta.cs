@@ -53,8 +53,7 @@ namespace Glass_Witch
             for (int i = 2; i <= 10; i++)
             {
                 daneKlienta += cwd.download_data("Select * from Klienci where Nazwa = '" + nazwa + "'").Rows[0][i].ToString() + " ";
-            }
-            
+            }            
             return daneKlienta;
         }
 

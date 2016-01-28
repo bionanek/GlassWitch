@@ -33,11 +33,12 @@
             // 
             // GenerujPDF
             // 
+            this.GenerujPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GenerujPDF.Location = new System.Drawing.Point(12, 12);
             this.GenerujPDF.Name = "GenerujPDF";
             this.GenerujPDF.Size = new System.Drawing.Size(377, 214);
             this.GenerujPDF.TabIndex = 0;
-            this.GenerujPDF.Text = "button1";
+            this.GenerujPDF.Text = "GENERUJ PDF";
             this.GenerujPDF.UseVisualStyleBackColor = true;
             this.GenerujPDF.Click += new System.EventHandler(this.GenerujPDF_Click);
             // 
@@ -48,7 +49,7 @@
             this.ClientSize = new System.Drawing.Size(401, 238);
             this.Controls.Add(this.GenerujPDF);
             this.Name = "PodsumowanieZamówienia1";
-            this.Text = "Podsumowanie Zamówienia";
+            this.Text = "PDF";
             this.ResumeLayout(false);
 
         }
