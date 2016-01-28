@@ -44,8 +44,7 @@ namespace Glass_Witch
 
         private void WprowadzanieNowegoKlienta_FormClosing(object sender, FormClosingEventArgs e)
         {
-            wybor wybor = new wybor();
-            wybor.Show();
+            
         }
 
         private void button_DoZamowienia_Click(object sender, EventArgs e)

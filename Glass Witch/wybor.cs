@@ -12,16 +12,16 @@ namespace Glass_Witch
 {
     public partial class wybor : Form
     {
-        
-        public wybor()
+        private DataTable _wybraneProdukty;
+        public wybor(DataTable wybraneProdukty)
         {
             InitializeComponent();
+            _wybraneProdukty = wybraneProdukty;
         }
 
         private void wybor_Load(object sender, EventArgs e)
         {
-            Start start = new Start();
-            start.Close();
+
         }
 
         private void but_powrot_Click(object sender, EventArgs e)
@@ -35,7 +35,6 @@ namespace Glass_Witch
             this.Close();
             WprowadzanieNowegoKlienta wnk = new WprowadzanieNowegoKlienta();
             wnk.Show();
-            this.Close();
         }
 
         private void wybor_FormClosing(object sender, FormClosingEventArgs e)
@@ -46,7 +45,7 @@ namespace Glass_Witch
         private void but_staly_klient_Click(object sender, EventArgs e)
         {
             this.Close();
-            DlaStalegoKlienta dsk = new DlaStalegoKlienta();
+            DlaStalegoKlienta dsk = new DlaStalegoKlienta(_wybraneProdukty);
             dsk.Show();
         }
     }

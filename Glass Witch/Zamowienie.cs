@@ -16,19 +16,23 @@ namespace Glass_Witch
     {
         DataGridView data_produkty;
         DataTable klient;
+        private DataTable _wybraneProdukty;
         DateTime CurrentDate = DateTime.Today;
+        
         ConnectWithDataBase cwd = new ConnectWithDataBase();
 
-        public Zamowienie(DataTable dane_klient, DataGridView dgv1_wybraneProdukty)
+        public Zamowienie(DataTable dane_klient, DataTable wybraneProdukty)
         {
             InitializeComponent();
             klient = dane_klient;
-            data_produkty = dgv1_wybraneProdukty;          
+            _wybraneProdukty = wybraneProdukty;
         }
 
         private void Zamowienie_Load(object sender, EventArgs e)
         {
-            dgv1_produkty.DataSource = cwd.download_data("select * from Produkty");
+            WyborProduktow wp = new WyborProduktow();
+            
+            dgv1_wybraneProdukty.DataSource = _wybraneProdukty;
             lab_nazwa.Text = klient.Rows[0]["Nazwa"].ToString();
             lab_ulica.Text = klient.Rows[0]["Ulica"].ToString();
             lab_KrajKod.Text = klient.Rows[0]["KodPocztowy"].ToString() + " " +

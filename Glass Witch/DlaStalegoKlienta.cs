@@ -26,14 +26,16 @@ namespace Glass_Witch
         string daneKlienta;
         DataTable wszyscyKlienci;
         DataTable dane_klienta;
+        private DataTable _wybraneProdukty;
         DataGridView dgv1_wybraneProdukty;
 
         StaliKlienciModel skm = new StaliKlienciModel();
         ConnectWithDataBase cwd = new ConnectWithDataBase();
 
-        public DlaStalegoKlienta()
+        public DlaStalegoKlienta(DataTable wybraneProdukty)
         {
             InitializeComponent();
+            _wybraneProdukty = wybraneProdukty;
         }
      
 
@@ -102,15 +104,13 @@ namespace Glass_Witch
 
         private void DlaStalegoKlienta_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Hide();
-            wybor wybor = new wybor();
-            wybor.Show();
+
 
         }
 
         private void but_DoZamowienia_Click(object sender, EventArgs e)
         {
-            Zamowienie zamowienie = new Zamowienie(dane_klienta, dgv1_wybraneProdukty);
+            Zamowienie zamowienie = new Zamowienie(dane_klienta, _wybraneProdukty);
             this.Hide();
             zamowienie.Show();
         }

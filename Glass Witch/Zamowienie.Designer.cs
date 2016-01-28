@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lab_ulica = new System.Windows.Forms.Label();
-            this.dgv1_produkty = new System.Windows.Forms.DataGridView();
+            this.dgv1_wybraneProdukty = new System.Windows.Forms.DataGridView();
             this.lab_nazwa = new System.Windows.Forms.Label();
             this.lab_KrajKod = new System.Windows.Forms.Label();
             this.lab_vat = new System.Windows.Forms.Label();
@@ -38,7 +38,7 @@
             this.lab_osobaKontaktowa = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.but_zatwierdź = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv1_produkty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv1_wybraneProdukty)).BeginInit();
             this.SuspendLayout();
             // 
             // lab_ulica
@@ -51,18 +51,18 @@
             this.lab_ulica.TabIndex = 0;
             this.lab_ulica.Text = "Ulica";
             // 
-            // dgv1_produkty
+            // dgv1_wybraneProdukty
             // 
-            this.dgv1_produkty.AllowUserToAddRows = false;
-            this.dgv1_produkty.AllowUserToDeleteRows = false;
-            this.dgv1_produkty.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv1_produkty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv1_produkty.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgv1_produkty.Location = new System.Drawing.Point(0, 324);
-            this.dgv1_produkty.Name = "dgv1_produkty";
-            this.dgv1_produkty.RowHeadersVisible = false;
-            this.dgv1_produkty.Size = new System.Drawing.Size(1048, 229);
-            this.dgv1_produkty.TabIndex = 1;
+            this.dgv1_wybraneProdukty.AllowUserToAddRows = false;
+            this.dgv1_wybraneProdukty.AllowUserToDeleteRows = false;
+            this.dgv1_wybraneProdukty.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv1_wybraneProdukty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv1_wybraneProdukty.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgv1_wybraneProdukty.Location = new System.Drawing.Point(0, 324);
+            this.dgv1_wybraneProdukty.Name = "dgv1_wybraneProdukty";
+            this.dgv1_wybraneProdukty.RowHeadersVisible = false;
+            this.dgv1_wybraneProdukty.Size = new System.Drawing.Size(1048, 229);
+            this.dgv1_wybraneProdukty.TabIndex = 1;
             // 
             // lab_nazwa
             // 
@@ -162,7 +162,7 @@
             this.Controls.Add(this.lab_vat);
             this.Controls.Add(this.lab_KrajKod);
             this.Controls.Add(this.lab_nazwa);
-            this.Controls.Add(this.dgv1_produkty);
+            this.Controls.Add(this.dgv1_wybraneProdukty);
             this.Controls.Add(this.lab_ulica);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Zamowienie";
@@ -170,7 +170,7 @@
             this.Text = "Zamówienie";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Zamowienie_FormClosing);
             this.Load += new System.EventHandler(this.Zamowienie_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv1_produkty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv1_wybraneProdukty)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,7 +179,6 @@
         #endregion
 
         private System.Windows.Forms.Label lab_ulica;
-        private System.Windows.Forms.DataGridView dgv1_produkty;
         private System.Windows.Forms.Label lab_nazwa;
         private System.Windows.Forms.Label lab_KrajKod;
         private System.Windows.Forms.Label lab_vat;
@@ -188,5 +187,6 @@
         private System.Windows.Forms.Label lab_osobaKontaktowa;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button but_zatwierdź;
+        public System.Windows.Forms.DataGridView dgv1_wybraneProdukty;
     }
 }

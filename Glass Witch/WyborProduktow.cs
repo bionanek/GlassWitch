@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 
@@ -16,16 +17,21 @@ namespace Glass_Witch
         ConnectWithDataBase cwd = new ConnectWithDataBase();
         DataTable _produkty;
         DataTable _daneProduktu;
+        private DataTable wybraneProdukty;
         private DataRow row;
-        private DataTable wybranyWiersz;
 
         int index;
+        private int zamowienieID;
 
         public WyborProduktow()
         {
             InitializeComponent();
         }
 
+        public DataTable ZwrocTabele()
+        {
+            return wybraneProdukty;
+        }
         private void WyborProduktow_Load(object sender, EventArgs e)
         {
             
@@ -124,8 +130,6 @@ namespace Glass_Witch
         {
             
             index = e.RowIndex;
-            wybranyWiersz= cwd.download_data("select * from Produkty where Nazwa = '" +
-                                              dgv1_produkty.Rows[index].Cells[1].Value.ToString() + "'");
             but_dodaj.Enabled = true;
         }
 
@@ -179,10 +183,26 @@ namespace Glass_Witch
 
         private void but_doKlienta_Click(object sender, EventArgs e)
         {
-            wybor wybor = new wybor();
-            this.Hide();
+            wybraneProdukty = new DataTable();
+            foreach (DataGridViewColumn col in dgv1_wybraneProdukty.Columns)
+            {
+                wybraneProdukty.Columns.Add(col.HeaderText);
+            }
+
+            foreach (DataGridViewRow row in dgv1_wybraneProdukty.Rows)
+            {
+                DataRow dRow = wybraneProdukty.NewRow();
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    dRow[cell.ColumnIndex] = cell.Value;
+                }
+                wybraneProdukty.Rows.Add(dRow);
+            }
+
+            wybor wybor = new wybor(wybraneProdukty);
             wybor.Show();
             this.Close();
+            
         }
     }
 }
