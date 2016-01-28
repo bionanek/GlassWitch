@@ -128,9 +128,10 @@
             // 
             // but_doKlienta
             // 
-            this.but_doKlienta.Location = new System.Drawing.Point(973, 22);
+            this.but_doKlienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_doKlienta.Location = new System.Drawing.Point(884, 12);
             this.but_doKlienta.Name = "but_doKlienta";
-            this.but_doKlienta.Size = new System.Drawing.Size(161, 54);
+            this.but_doKlienta.Size = new System.Drawing.Size(250, 55);
             this.but_doKlienta.TabIndex = 7;
             this.but_doKlienta.Text = "Dalej";
             this.but_doKlienta.UseVisualStyleBackColor = true;
@@ -153,8 +154,7 @@
             this.Controls.Add(this.dgv1_produkty);
             this.Name = "WyborProduktow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WyborProduktow";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.WyborProduktow_FormClosing);
+            this.Text = "Wybór Produktów";
             this.Load += new System.EventHandler(this.WyborProduktow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1_produkty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1_wybraneProdukty)).EndInit();

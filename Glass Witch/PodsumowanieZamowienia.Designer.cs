@@ -62,7 +62,7 @@
             this.Controls.Add(this.but_generowanie);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "PodsumowanieZamowienia";
-            this.Text = "PodsumowanieZamowienia";
+            this.Text = "Podsumowanie Zamówienia";
             this.Load += new System.EventHandler(this.PodsumowanieZamowienia_Load);
             this.ResumeLayout(false);
 

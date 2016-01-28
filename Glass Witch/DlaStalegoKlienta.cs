@@ -26,9 +26,11 @@ namespace Glass_Witch
         string daneKlienta;
         DataTable wszyscyKlienci;
         DataTable dane_klienta;
+        DataGridView dgv1_wybraneProdukty;
 
         StaliKlienciModel skm = new StaliKlienciModel();
         ConnectWithDataBase cwd = new ConnectWithDataBase();
+
         public DlaStalegoKlienta()
         {
             InitializeComponent();
@@ -97,6 +99,7 @@ namespace Glass_Witch
             e.DrawBorder();
             e.Graphics.DrawString(e.ToolTipText, f, Brushes.Black, new PointF(2, 2));
         }*/
+
         private void DlaStalegoKlienta_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
@@ -107,7 +110,7 @@ namespace Glass_Witch
 
         private void but_DoZamowienia_Click(object sender, EventArgs e)
         {
-            Zamowienie zamowienie = new Zamowienie(dane_klienta);
+            Zamowienie zamowienie = new Zamowienie(dane_klienta, dgv1_wybraneProdukty);
             this.Hide();
             zamowienie.Show();
         }
@@ -160,6 +163,13 @@ namespace Glass_Witch
                     }
                 }
             }
+        }
+
+        private void but_do_wprowadzania_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            WprowadzanieNowegoKlienta wnk = new WprowadzanieNowegoKlienta();
+            wnk.Show();
         }
     }
 }

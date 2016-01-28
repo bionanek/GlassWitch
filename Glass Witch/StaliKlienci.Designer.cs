@@ -70,7 +70,7 @@
             this.ClientSize = new System.Drawing.Size(1281, 638);
             this.Controls.Add(this.dgv1_StaliKlienci);
             this.Name = "StaliKlienci";
-            this.Text = "StaliKlienci";
+            this.Text = "Stali Klienci";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StaliKlienci_FormClosing);
             this.Load += new System.EventHandler(this.StaliKlienci_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1_StaliKlienci)).EndInit();

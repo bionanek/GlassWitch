@@ -38,7 +38,7 @@
             this.Name = "SkładanieZamówienia";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SkładanieZamówienia";
+            this.Text = "Składanie Zamówienia";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SkładanieZamówienia_FormClosing);
             this.ResumeLayout(false);
 

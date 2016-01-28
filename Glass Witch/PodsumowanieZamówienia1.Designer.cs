@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(401, 238);
             this.Controls.Add(this.GenerujPDF);
             this.Name = "PodsumowanieZamówienia1";
-            this.Text = "PodsumowanieZamówienia1";
+            this.Text = "Podsumowanie Zamówienia";
             this.ResumeLayout(false);
 
         }

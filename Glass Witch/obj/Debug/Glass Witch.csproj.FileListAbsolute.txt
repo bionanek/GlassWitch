@@ -90,7 +90,6 @@ C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecision
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\stdole.dll
-C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csprojResolveAssemblyReference.cache
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\itextsharp.dll
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\itextsharp.pdfa.dll
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\itextsharp.xtra.dll
@@ -118,3 +117,5 @@ C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\bin\Debug\stdole.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\CrystalReport1.cs.dll
+C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\bin\Debug\Properties.Resources.Designer.cs.dll

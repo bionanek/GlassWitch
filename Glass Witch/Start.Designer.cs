@@ -84,9 +84,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(676, 12);
+            this.button1.Location = new System.Drawing.Point(649, 153);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 184);
+            this.button1.Size = new System.Drawing.Size(230, 43);
             this.button1.TabIndex = 4;
             this.button1.Text = "kontrola łączności";
             this.button1.UseVisualStyleBackColor = true;
@@ -116,14 +116,12 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 8;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1130, 638);
+            this.ClientSize = new System.Drawing.Size(1129, 636);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lab_wersja);
             this.Controls.Add(this.dataGridView1);
@@ -132,9 +130,10 @@
             this.Controls.Add(this.but_wszystkie);
             this.Controls.Add(this.but_wykonane);
             this.Controls.Add(this.but_nowe);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Start";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Programoinator";
+            this.Text = "Glass Witch S.C. ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Start_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

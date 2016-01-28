@@ -12,7 +12,7 @@ namespace Glass_Witch
     public partial class WprowadzanieNowegoKlienta : Form
     {
         DateTime CurrentDate = DateTime.Today;
-
+        DataTable klient;
         ConnectWithDataBase cwd = new ConnectWithDataBase();
 
         public void TextGotFocus(object sender, EventArgs e)
@@ -91,12 +91,11 @@ namespace Glass_Witch
                 txt_MiastoDostarczenia.Text + "', '" +
                 txt_KodPocztowyDostarczenia.Text + "', '" +
                 txt_KrajDostarczenia.Text + "') ");
-
                 }
 
-                this.Hide();
-                SkładanieZamówienia DoZamowienia = new SkładanieZamówienia();
-                DoZamowienia.Show();
+                this.Close();
+                //Zamowienie zamowienie = new Zamowienie();
+                //zamowienie.Show();
             }
         }
 

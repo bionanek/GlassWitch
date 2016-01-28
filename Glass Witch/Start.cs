@@ -37,7 +37,7 @@ namespace Glass_Witch
         private void but_nowe_Click(object sender, EventArgs e)
         {
             WyborProduktow wp = new WyborProduktow();
-            wp.Show();
+            wp.Show(); 
         }
 
         private void but_wszystkie_Click(object sender, EventArgs e)
@@ -50,11 +50,6 @@ namespace Glass_Witch
         {
             StaliKlienci sk = new StaliKlienci();
             sk.Show();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

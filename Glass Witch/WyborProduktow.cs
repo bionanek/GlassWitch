@@ -19,7 +19,6 @@ namespace Glass_Witch
         private DataRow row;
         private DataTable wybranyWiersz;
 
-
         int index;
 
         public WyborProduktow()
@@ -184,12 +183,6 @@ namespace Glass_Witch
             this.Hide();
             wybor.Show();
             this.Close();
-            
-        }
-
-        private void WyborProduktow_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            
         }
     }
 }

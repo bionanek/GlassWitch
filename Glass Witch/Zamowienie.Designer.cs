@@ -138,13 +138,13 @@
             // 
             // but_zatwierdź
             // 
-            this.but_zatwierdź.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.but_zatwierdź.Location = new System.Drawing.Point(843, 10);
+            this.but_zatwierdź.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.but_zatwierdź.Location = new System.Drawing.Point(752, 10);
             this.but_zatwierdź.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.but_zatwierdź.Name = "but_zatwierdź";
-            this.but_zatwierdź.Size = new System.Drawing.Size(125, 47);
+            this.but_zatwierdź.Size = new System.Drawing.Size(216, 81);
             this.but_zatwierdź.TabIndex = 9;
-            this.but_zatwierdź.Text = "Zatwierdź";
+            this.but_zatwierdź.Text = "Zatwierdź i generuj do PDF";
             this.but_zatwierdź.UseVisualStyleBackColor = true;
             this.but_zatwierdź.Click += new System.EventHandler(this.but_zatwierdź_Click);
             // 
@@ -164,9 +164,10 @@
             this.Controls.Add(this.lab_nazwa);
             this.Controls.Add(this.dgv1_produkty);
             this.Controls.Add(this.lab_ulica);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Zamowienie";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Zamowienie";
+            this.Text = "Zamówienie";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Zamowienie_FormClosing);
             this.Load += new System.EventHandler(this.Zamowienie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1_produkty)).EndInit();

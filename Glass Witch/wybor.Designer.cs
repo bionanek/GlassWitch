@@ -81,7 +81,7 @@
             this.MinimumSize = new System.Drawing.Size(706, 367);
             this.Name = "wybor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Wybór rodzaju zamówienia";
+            this.Text = "Wybór Klienta Zamówienia";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.wybor_FormClosing);
             this.Load += new System.EventHandler(this.wybor_Load);
             this.ResumeLayout(false);
