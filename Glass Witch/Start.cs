@@ -27,11 +27,7 @@ namespace Glass_Witch
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ConnectWithDataBase baza = new ConnectWithDataBase();
-            dataGridView1.DataSource = baza.download_data("Select * from Produkty");
-            DataTable klientid =
-            baza.download_data("Select KlientID from Klienci where Nazwa = 'Komozja'");
-            textBox1.Text = (int.Parse(klientid.Rows[0][0].ToString()) + 1).ToString();
+        
         }
 
         private void but_nowe_Click(object sender, EventArgs e)
@@ -50,6 +46,12 @@ namespace Glass_Witch
         {
             StaliKlienci sk = new StaliKlienci();
             sk.Show();
+        }
+
+        private void but_dodajProdukt_Click(object sender, EventArgs e)
+        {
+            DodawanieProduktowDoBazy dpdb = new DodawanieProduktowDoBazy();
+            dpdb.Show();
         }
     }
 }

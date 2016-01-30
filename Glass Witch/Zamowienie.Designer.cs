@@ -31,13 +31,17 @@
             this.lab_ulica = new System.Windows.Forms.Label();
             this.dgv1_wybraneProdukty = new System.Windows.Forms.DataGridView();
             this.lab_nazwa = new System.Windows.Forms.Label();
-            this.lab_KrajKod = new System.Windows.Forms.Label();
+            this.lab_kodPocztowy = new System.Windows.Forms.Label();
             this.lab_vat = new System.Windows.Forms.Label();
             this.lab_data = new System.Windows.Forms.Label();
             this.lab_mail = new System.Windows.Forms.Label();
             this.lab_osobaKontaktowa = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.but_zatwierdź = new System.Windows.Forms.Button();
+            this.lab_termin = new System.Windows.Forms.Label();
+            this.lab_deadline = new System.Windows.Forms.Label();
+            this.lab_miasto = new System.Windows.Forms.Label();
+            this.lab_kraj = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1_wybraneProdukty)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +49,7 @@
             // 
             this.lab_ulica.AutoSize = true;
             this.lab_ulica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_ulica.Location = new System.Drawing.Point(28, 182);
+            this.lab_ulica.Location = new System.Drawing.Point(27, 152);
             this.lab_ulica.Name = "lab_ulica";
             this.lab_ulica.Size = new System.Drawing.Size(44, 20);
             this.lab_ulica.TabIndex = 0;
@@ -68,21 +72,21 @@
             // 
             this.lab_nazwa.AutoSize = true;
             this.lab_nazwa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_nazwa.Location = new System.Drawing.Point(28, 90);
+            this.lab_nazwa.Location = new System.Drawing.Point(27, 60);
             this.lab_nazwa.Name = "lab_nazwa";
             this.lab_nazwa.Size = new System.Drawing.Size(62, 20);
             this.lab_nazwa.TabIndex = 2;
             this.lab_nazwa.Text = "Nazwa";
             // 
-            // lab_KrajKod
+            // lab_kodPocztowy
             // 
-            this.lab_KrajKod.AutoSize = true;
-            this.lab_KrajKod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_KrajKod.Location = new System.Drawing.Point(27, 217);
-            this.lab_KrajKod.Name = "lab_KrajKod";
-            this.lab_KrajKod.Size = new System.Drawing.Size(140, 20);
-            this.lab_KrajKod.TabIndex = 3;
-            this.lab_KrajKod.Text = "Kod pocztowy, kraj";
+            this.lab_kodPocztowy.AutoSize = true;
+            this.lab_kodPocztowy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lab_kodPocztowy.Location = new System.Drawing.Point(26, 187);
+            this.lab_kodPocztowy.Name = "lab_kodPocztowy";
+            this.lab_kodPocztowy.Size = new System.Drawing.Size(107, 20);
+            this.lab_kodPocztowy.TabIndex = 3;
+            this.lab_kodPocztowy.Text = "Kod pocztowy";
             // 
             // lab_vat
             // 
@@ -110,7 +114,7 @@
             // 
             this.lab_mail.AutoSize = true;
             this.lab_mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_mail.Location = new System.Drawing.Point(27, 151);
+            this.lab_mail.Location = new System.Drawing.Point(26, 121);
             this.lab_mail.Name = "lab_mail";
             this.lab_mail.Size = new System.Drawing.Size(53, 20);
             this.lab_mail.TabIndex = 6;
@@ -120,7 +124,7 @@
             // 
             this.lab_osobaKontaktowa.AutoSize = true;
             this.lab_osobaKontaktowa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lab_osobaKontaktowa.Location = new System.Drawing.Point(28, 122);
+            this.lab_osobaKontaktowa.Location = new System.Drawing.Point(27, 92);
             this.lab_osobaKontaktowa.Name = "lab_osobaKontaktowa";
             this.lab_osobaKontaktowa.Size = new System.Drawing.Size(160, 20);
             this.lab_osobaKontaktowa.TabIndex = 7;
@@ -148,19 +152,63 @@
             this.but_zatwierdź.UseVisualStyleBackColor = true;
             this.but_zatwierdź.Click += new System.EventHandler(this.but_zatwierdź_Click);
             // 
+            // lab_termin
+            // 
+            this.lab_termin.AutoSize = true;
+            this.lab_termin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lab_termin.Location = new System.Drawing.Point(110, 281);
+            this.lab_termin.Name = "lab_termin";
+            this.lab_termin.Size = new System.Drawing.Size(57, 20);
+            this.lab_termin.TabIndex = 10;
+            this.lab_termin.Text = "Termin";
+            // 
+            // lab_deadline
+            // 
+            this.lab_deadline.AutoSize = true;
+            this.lab_deadline.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lab_deadline.Location = new System.Drawing.Point(27, 281);
+            this.lab_deadline.Name = "lab_deadline";
+            this.lab_deadline.Size = new System.Drawing.Size(76, 20);
+            this.lab_deadline.TabIndex = 11;
+            this.lab_deadline.Text = "Deadline:";
+            // 
+            // lab_miasto
+            // 
+            this.lab_miasto.AutoSize = true;
+            this.lab_miasto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lab_miasto.Location = new System.Drawing.Point(139, 187);
+            this.lab_miasto.Name = "lab_miasto";
+            this.lab_miasto.Size = new System.Drawing.Size(56, 20);
+            this.lab_miasto.TabIndex = 12;
+            this.lab_miasto.Text = "Miasto";
+            // 
+            // lab_kraj
+            // 
+            this.lab_kraj.AutoSize = true;
+            this.lab_kraj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lab_kraj.Location = new System.Drawing.Point(27, 219);
+            this.lab_kraj.Name = "lab_kraj";
+            this.lab_kraj.Size = new System.Drawing.Size(36, 20);
+            this.lab_kraj.TabIndex = 13;
+            this.lab_kraj.Text = "Kraj";
+            // 
             // Zamowienie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1048, 553);
+            this.Controls.Add(this.lab_kraj);
+            this.Controls.Add(this.lab_miasto);
+            this.Controls.Add(this.lab_deadline);
+            this.Controls.Add(this.lab_termin);
             this.Controls.Add(this.but_zatwierdź);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lab_osobaKontaktowa);
             this.Controls.Add(this.lab_mail);
             this.Controls.Add(this.lab_data);
             this.Controls.Add(this.lab_vat);
-            this.Controls.Add(this.lab_KrajKod);
+            this.Controls.Add(this.lab_kodPocztowy);
             this.Controls.Add(this.lab_nazwa);
             this.Controls.Add(this.dgv1_wybraneProdukty);
             this.Controls.Add(this.lab_ulica);
@@ -180,7 +228,7 @@
 
         private System.Windows.Forms.Label lab_ulica;
         private System.Windows.Forms.Label lab_nazwa;
-        private System.Windows.Forms.Label lab_KrajKod;
+        private System.Windows.Forms.Label lab_kodPocztowy;
         private System.Windows.Forms.Label lab_vat;
         private System.Windows.Forms.Label lab_data;
         private System.Windows.Forms.Label lab_mail;
@@ -188,5 +236,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button but_zatwierdź;
         public System.Windows.Forms.DataGridView dgv1_wybraneProdukty;
+        private System.Windows.Forms.Label lab_termin;
+        private System.Windows.Forms.Label lab_deadline;
+        private System.Windows.Forms.Label lab_miasto;
+        private System.Windows.Forms.Label lab_kraj;
     }
 }

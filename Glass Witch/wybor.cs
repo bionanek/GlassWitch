@@ -27,15 +27,13 @@ namespace Glass_Witch
         private void but_powrot_Click(object sender, EventArgs e)
         {
             this.Close();
-            Start start = new Start();
-            start.Show();
         }
 
        
         private void but_nowy_klient_Click(object sender, EventArgs e)
         {
             this.Close();
-            WprowadzanieNowegoKlienta wnk = new WprowadzanieNowegoKlienta();
+            WprowadzanieNowegoKlienta wnk = new WprowadzanieNowegoKlienta(_wybraneProdukty);
             wnk.Show();
         }
 

@@ -41,7 +41,7 @@ namespace Glass_Witch
 
         private void DlaStalegoKlienta_Load(object sender, EventArgs e)
         {
-            this.Size = new Size(358, 393);
+            this.Size = new Size(358, 358);
             wszyscyKlienci = cwd.download_data("select Nazwa, Kraj from Klienci");
             dgv1_zamStaliKlienci.DataSource = wszyscyKlienci;
             dgv1_zamStaliKlienci.Rows[0].Selected = false;
@@ -108,9 +108,16 @@ namespace Glass_Witch
 
         private void but_DoZamowienia_Click(object sender, EventArgs e)
         {
-            Zamowienie zamowienie = new Zamowienie(dane_klienta, _wybraneProdukty);
-            this.Hide();
-            zamowienie.Show();
+            if (string.IsNullOrWhiteSpace(txt_termin.Text))
+            {
+                MessageBox.Show("Wpisz termin dostawy!");
+            }
+            else
+            {
+                Zamowienie zamowienie = new Zamowienie(dane_klienta, _wybraneProdukty, txt_termin.Text);
+                this.Hide();
+                zamowienie.Show();
+            }
         }
 
         private void dgv1_zamStaliKlienci_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -166,8 +173,13 @@ namespace Glass_Witch
         private void but_do_wprowadzania_Click(object sender, EventArgs e)
         {
             this.Close();
-            WprowadzanieNowegoKlienta wnk = new WprowadzanieNowegoKlienta();
+            WprowadzanieNowegoKlienta wnk = new WprowadzanieNowegoKlienta(_wybraneProdukty);
             wnk.Show();
+        }
+
+        private void dgv1_zamStaliKlienci_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

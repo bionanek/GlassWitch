@@ -13,6 +13,7 @@ namespace Glass_Witch
     {
         DateTime CurrentDate = DateTime.Today;
         DataTable klient;
+        private DataTable _wybraneProdukty;
         ConnectWithDataBase cwd = new ConnectWithDataBase();
 
         public void TextGotFocus(object sender, EventArgs e)
@@ -25,9 +26,10 @@ namespace Glass_Witch
             }
         } 
         
-        public WprowadzanieNowegoKlienta()
+        public WprowadzanieNowegoKlienta(DataTable wybraneProdukty)
         {
             InitializeComponent();
+            _wybraneProdukty = wybraneProdukty;
         }
 
 
@@ -92,9 +94,12 @@ namespace Glass_Witch
                 txt_KrajDostarczenia.Text + "') ");
                 }
 
+                klient = cwd.download_data("select * from Klienci where Nazwa = '" + txt_NazwaFirmy.Text + "'");
+
+
                 this.Close();
-                //Zamowienie zamowienie = new Zamowienie();
-                //zamowienie.Show();
+                Zamowienie zamowienie = new Zamowienie(klient, _wybraneProdukty, txt_DataOczekiwana.Text);
+                zamowienie.Show();
             }
         }
 

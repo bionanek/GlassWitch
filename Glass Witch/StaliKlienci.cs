@@ -20,9 +20,6 @@ namespace Glass_Witch
 
         private void StaliKlienci_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Start start = new Start();
-            this.Hide();
-            start.Show();
         }
 
         private void StaliKlienci_Load(object sender, EventArgs e)

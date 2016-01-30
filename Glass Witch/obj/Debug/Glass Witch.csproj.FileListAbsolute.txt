@@ -37,7 +37,6 @@ C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\bin\Debug\Glass Witch.exe
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\bin\Debug\Glass Witch.pdb
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csprojResolveAssemblyReference.cache
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.DlaStalegoKlienta.resources
-C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.SkładanieZamówienia.resources
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.StaliKlienci.resources
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Start.resources
 C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Properties.Resources.resources
@@ -119,3 +118,4 @@ C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.Zam
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.csproj.GenerateResource.Cache
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.exe
 C:\Users\oskar\Documents\GitHub\GlassWitch\Glass Witch\obj\Debug\Glass Witch.pdb
+C:\Users\Kuba\Documents\PULPIT\GlassWitch\Glass Witch\obj\Debug\Glass_Witch.DodawanieProduktowDoBazy.resources

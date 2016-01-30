@@ -112,9 +112,6 @@ namespace Glass_Witch
 
         private void PodsumowanieZamówienia1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Hide();
-            Start start = new Start();
-            start.Show();
         }
     }
 }

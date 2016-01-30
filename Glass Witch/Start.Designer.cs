@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
             this.but_nowe = new System.Windows.Forms.Button();
-            this.but_wykonane = new System.Windows.Forms.Button();
+            this.but_dodajProdukt = new System.Windows.Forms.Button();
             this.but_wszystkie = new System.Windows.Forms.Button();
             this.but_klienci = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lab_wersja = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // but_nowe
@@ -50,15 +49,16 @@
             this.but_nowe.UseVisualStyleBackColor = true;
             this.but_nowe.Click += new System.EventHandler(this.but_nowe_Click);
             // 
-            // but_wykonane
+            // but_dodajProdukt
             // 
-            this.but_wykonane.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_wykonane.Location = new System.Drawing.Point(12, 331);
-            this.but_wykonane.Name = "but_wykonane";
-            this.but_wykonane.Size = new System.Drawing.Size(225, 75);
-            this.but_wykonane.TabIndex = 2;
-            this.but_wykonane.Text = "Zamówienia wykonane";
-            this.but_wykonane.UseVisualStyleBackColor = true;
+            this.but_dodajProdukt.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_dodajProdukt.Location = new System.Drawing.Point(12, 331);
+            this.but_dodajProdukt.Name = "but_dodajProdukt";
+            this.but_dodajProdukt.Size = new System.Drawing.Size(225, 75);
+            this.but_dodajProdukt.TabIndex = 2;
+            this.but_dodajProdukt.Text = "Dodaj produkt";
+            this.but_dodajProdukt.UseVisualStyleBackColor = true;
+            this.but_dodajProdukt.Click += new System.EventHandler(this.but_dodajProdukt_Click);
             // 
             // but_wszystkie
             // 
@@ -82,24 +82,6 @@
             this.but_klienci.UseVisualStyleBackColor = true;
             this.but_klienci.Click += new System.EventHandler(this.but_klienci_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(649, 153);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 43);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "kontrola łączności";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(338, 202);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(766, 150);
-            this.dataGridView1.TabIndex = 5;
-            // 
             // lab_wersja
             // 
             this.lab_wersja.AutoSize = true;
@@ -110,32 +92,35 @@
             this.lab_wersja.TabIndex = 6;
             this.lab_wersja.Text = "PreALFA v1.0";
             // 
-            // textBox1
+            // pictureBox2
             // 
-            this.textBox1.Location = new System.Drawing.Point(931, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.ImageLocation = "";
+            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(589, 154);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(112, 56);
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1129, 636);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lab_wersja);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.but_klienci);
             this.Controls.Add(this.but_wszystkie);
-            this.Controls.Add(this.but_wykonane);
+            this.Controls.Add(this.but_dodajProdukt);
             this.Controls.Add(this.but_nowe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Start";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Glass Witch S.C. ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Start_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,13 +129,11 @@
         #endregion
 
         private System.Windows.Forms.Button but_nowe;
-        private System.Windows.Forms.Button but_wykonane;
+        private System.Windows.Forms.Button but_dodajProdukt;
         private System.Windows.Forms.Button but_wszystkie;
         private System.Windows.Forms.Button but_klienci;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lab_wersja;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
